@@ -1,0 +1,2011 @@
+[96mnode_modules/next/dist/build/webpack/loaders/next-app-loader/index.d.ts[0m:[93m1[0m:[93m13[0m - [91merror[0m[90m TS2613: [0mModule '"next/dist/compiled/webpack/webpack"' has no default export. Did you mean to use 'import { webpack } from "next/dist/compiled/webpack/webpack"' instead?
+
+[7m1[0m import type webpack from 'next/dist/compiled/webpack/webpack';
+[7m [0m [91m            ~~~~~~~[0m
+
+[96mnode_modules/next/dist/client/components/catch-error.d.ts[0m:[93m2[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m2[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/components/error-boundary.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React, { type JSX } from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/components/http-access-fallback/error-boundary.d.ts[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m11[0m import React from 'react';
+[7m  [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/components/layout-router.d.ts[0m:[93m3[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m3[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/components/segment-cache/cache.d.ts[0m:[93m104[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'PromiseWithResolvers'.
+
+[7m104[0m     promise: null | PromiseWithResolvers<FulfilledSegmentCacheEntry | null>;
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mnode_modules/next/dist/client/image-component.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/link.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/script.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React, { type JSX } from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/client/with-router.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/lib/metadata/metadata.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/pages/_app.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/pages/_document.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React, { type JSX } from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/pages/_error.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/server/app-render/types.d.ts[0m:[93m10[0m:[93m8[0m - [91merror[0m[90m TS1192: [0mModule '"next/dist/compiled/superstruct"' has no default export.
+
+[7m10[0m import s from 'next/dist/compiled/superstruct';
+[7m  [0m [91m       ~[0m
+
+[96mnode_modules/next/dist/server/web/spec-extension/adapters/headers.d.ts[0m:[93m39[0m:[93m16[0m - [91merror[0m[90m TS2304: [0mCannot find name 'HeadersIterator'.
+
+[7m39[0m     entries(): HeadersIterator<[string, string]>;
+[7m  [0m [91m               ~~~~~~~~~~~~~~~[0m
+
+[96mnode_modules/next/dist/server/web/spec-extension/adapters/headers.d.ts[0m:[93m40[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'HeadersIterator'.
+
+[7m40[0m     keys(): HeadersIterator<string>;
+[7m  [0m [91m            ~~~~~~~~~~~~~~~[0m
+
+[96mnode_modules/next/dist/server/web/spec-extension/adapters/headers.d.ts[0m:[93m41[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'HeadersIterator'.
+
+[7m41[0m     values(): HeadersIterator<string>;
+[7m  [0m [91m              ~~~~~~~~~~~~~~~[0m
+
+[96mnode_modules/next/dist/server/web/spec-extension/adapters/headers.d.ts[0m:[93m42[0m:[93m26[0m - [91merror[0m[90m TS2304: [0mCannot find name 'HeadersIterator'.
+
+[7m42[0m     [Symbol.iterator](): HeadersIterator<[string, string]>;
+[7m  [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+[96mnode_modules/next/dist/shared/lib/app-router-context.shared-runtime.d.ts[0m:[93m4[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m4[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/app-router-types.d.ts[0m:[93m7[0m:[93m13[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m7[0m import type React from 'react';
+[7m [0m [91m            ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/dynamic.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/head-manager-context.shared-runtime.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/head.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React, { type JSX } from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/image-config-context.shared-runtime.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/loadable-context.shared-runtime.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/loadable.shared-runtime.d.ts[0m:[93m21[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m21[0m import React from 'react';
+[7m  [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/router-context.shared-runtime.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/server-inserted-html.shared-runtime.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react';
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96mnode_modules/next/dist/shared/lib/utils.d.ts[0m:[93m10[0m:[93m13[0m - [91merror[0m[90m TS1192: [0mModule '"fs"' has no default export.
+
+[7m10[0m import type fs from 'fs';
+[7m  [0m [91m            ~~[0m
+
+[96mnode_modules/next/dist/styled-jsx/types/global.d.ts[0m:[93m1[0m:[93m8[0m - [91merror[0m[90m TS1259: [0mModule '"/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag
+
+[7m1[0m import React from 'react'
+[7m [0m [91m       ~~~~~[0m
+
+  [96mnode_modules/@types/react/index.d.ts[0m:[93m67[0m:[93m1[0m
+    [7m67[0m export = React;
+    [7m  [0m [96m~~~~~~~~~~~~~~~[0m
+    This module is declared with 'export =', and can only be used with a default import when using the 'esModuleInterop' flag.
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/components/public/fallback-image' or its corresponding type declarations.
+
+[7m4[0m import { FallbackImage } from '@/components/public/fallback-image'
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/queries' or its corresponding type declarations.
+
+[7m11[0m } from '@/lib/queries'
+[7m  [0m [91m       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m12[0m:[93m74[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/image' or its corresponding type declarations.
+
+[7m12[0m import { articleImageUrl, galleryImageUrl, logoUrl, videoThumbUrl } from '@/lib/image'
+[7m  [0m [91m                                                                         ~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m13[0m:[93m34[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/types' or its corresponding type declarations.
+
+[7m13[0m import { LANG_CODE_LOCALE } from '@/lib/types'
+[7m  [0m [91m                                 ~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m14[0m:[93m56[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/format' or its corresponding type declarations.
+
+[7m14[0m import { formatPublishedDate, formatCompactDate } from '@/lib/format'
+[7m  [0m [91m                                                       ~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m15[0m:[93m89[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/queries' or its corresponding type declarations.
+
+[7m15[0m import { getPollByPermalink, getPollOptions, getLatestVideos, getLatestGalleries } from '@/lib/queries'
+[7m  [0m [91m                                                                                        ~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m144[0m:[93m5[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m144[0m     <>
+[7m   [0m [91m    ~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m145[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m145[0m       <script
+[7m   [0m [91m      ~~~~~~~[0m
+[7m146[0m         type="application/ld+json"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m147[0m         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m148[0m       />
+[7m   [0m [91m~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m149[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m149[0m       <main className="relative isolate overflow-hidden">
+[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m150[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m150[0m         <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[28rem] bg-[radial-gradient(circle_at_top_left,rgba(237,50,55,0.14),transparent_24%),radial-gradient(circle_at_top_right,rgba(205,3,33,0.12),transparent_20%),linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0))]" />
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m151[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m151[0m         <section className="mx-auto max-w-7xl px-4 pb-8 pt-6 md:pt-10">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m152[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m152[0m           <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)] md:p-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m153[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m153[0m             <div className="mb-4 flex items-center gap-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m154[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m154[0m               <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">Top Story</span>
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m155[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m155[0m               <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m156[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m156[0m               <span className="hidden text-xs uppercase tracking-[0.24em] text-[var(--muted)] md:inline-flex">Punjab Newsline</span>
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m159[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m159[0m             <nav className="flex flex-wrap items-center gap-2 text-sm text-[var(--muted)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m160[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m160[0m               <Link href="/" className="font-medium text-[var(--brand-strong)] transition hover:text-[var(--brand)]">Home</Link>
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m161[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m161[0m               <ChevronRight className="h-3.5 w-3.5 text-[var(--muted)]" />
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m162[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m162[0m               <span className="font-medium text-[var(--foreground)]">{eyebrow}</span>
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m165[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m165[0m             <div className="mt-5 grid gap-6 lg:grid-cols-[1.35fr_0.95fr]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m166[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m166[0m               <div>
+[7m   [0m [91m              ~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m167[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m167[0m                 <h1 className="font-display text-3xl font-semibold leading-tight text-[var(--foreground)] md:text-5xl">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m171[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m171[0m                   <p className="mt-4 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m176[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m176[0m                 <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-[var(--muted)]">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m178[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m178[0m                     <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m179[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m179[0m                       <CircleUserRound className="h-4 w-4" />
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m184[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m184[0m                     <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m185[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m185[0m                       <CalendarDays className="h-4 w-4" />
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m190[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m190[0m                     <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m191[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m191[0m                       <Clock3 className="h-4 w-4" />
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m197[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m197[0m                 <div className="mt-6 flex items-center gap-3 border-t border-[var(--border)] pt-4 text-sm text-[var(--muted)]">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m198[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m198[0m                   <span className="inline-flex items-center gap-2 rounded-full bg-[rgba(237,50,55,0.1)] px-3 py-2 font-medium text-[var(--brand-strong)]">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m199[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m199[0m                     <Share2 className="h-4 w-4" />
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m202[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m202[0m                   <span className="inline-flex items-center gap-2 rounded-full bg-[rgba(237,50,55,0.1)] px-3 py-2 font-medium text-[var(--brand-strong)]">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m203[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m203[0m                     <Sparkles className="h-4 w-4" />
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m209[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m209[0m               <div className="rounded-[24px] border border-[var(--border)] bg-[var(--surface-muted)] p-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m210[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m210[0m                 <div className="relative aspect-[16/11] overflow-hidden rounded-[20px] bg-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m211[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m211[0m                   <FallbackImage
+[7m   [0m [91m                  ~~~~~~~~~~~~~~[0m
+[7m212[0m                     src={imageUrl}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m217[0m                     priority
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m218[0m                   />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m221[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m221[0m                   <p className="mt-4 border-l-4 border-[var(--brand)] pl-4 text-base leading-7 text-[var(--muted)] md:text-lg">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m225[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m225[0m                 <div className="mt-4 flex flex-wrap gap-2">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m227[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m227[0m                     <span
+[7m   [0m [91m                    ~~~~~[0m
+[7m228[0m                       key={tag}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m229[0m                       className="rounded-full border border-[var(--border)] bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--brand-strong)]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m230[0m                     >
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m240[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m240[0m         <section className="mx-auto grid max-w-7xl gap-8 px-4 pb-12 lg:grid-cols-[minmax(0,1.15fr)_22rem]">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m241[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m241[0m           <article className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-5 shadow-[var(--shadow-soft)] md:p-8">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m243[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m243[0m               <p className="mb-8 border-l-4 border-[var(--brand)] pl-5 text-lg leading-8 text-[var(--foreground)] md:text-xl">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m249[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m249[0m               <div
+[7m   [0m [91m              ~~~~[0m
+[7m250[0m                 className="article-body max-w-none"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m251[0m                 dangerouslySetInnerHTML={{ __html: article.article_body }}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m252[0m               />
+[7m   [0m [91m~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m256[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m256[0m               <div className="mt-8 flex flex-wrap gap-2">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m258[0m                   <span
+[7m   [0m [91m                  ~~~~~[0m
+[7m259[0m                     key={tag}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m260[0m                     className="rounded-full border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-1 text-sm text-[var(--muted)]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m261[0m                   >
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m268[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m268[0m             <div className="mt-8 rounded-[24px] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m269[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m269[0m               <div className="mb-3 flex items-center gap-2">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m270[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m270[0m                 <MessageSquare className="h-4 w-4 text-[var(--brand)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m271[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m271[0m                 <h2 className="font-display text-lg font-semibold">Readers&apos; comments</h2>
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m273[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m273[0m               <p className="text-sm leading-6 text-[var(--muted)]">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m279[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m279[0m           <aside className="space-y-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m280[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m280[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m281[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m281[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m282[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m282[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m285[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m285[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m287[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m287[0m               <div className="space-y-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m289[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m289[0m                   <a key={relatedArticle.article_code} href={`/news/${relatedArticle.permalink}`} className="group flex gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:-translate-y-0.5">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m290[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m290[0m                     <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m291[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m291[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m292[0m                         src={articleImageUrl(relatedArticle.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m296[0m                         sizes="80px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m297[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m299[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m299[0m                     <div className="min-w-0">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m300[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m300[0m                       <h3 className="line-clamp-3 font-display text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m303[0m:[93m47[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m303[0m                       {relatedArticle.date && <p className="mt-1 text-[11px] uppercase tracking-[0.22em] text-[var(--muted)]">{formatCompactDate(relatedArticle.date)}</p>}
+[7m   [0m [91m                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m310[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m310[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m311[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m311[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m312[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m312[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m315[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m315[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m318[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m318[0m                 <div className="space-y-3">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m323[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m323[0m                       <div key={option.option_code} className="rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m324[0m:[93m25[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m324[0m                         <div className="flex items-center justify-between gap-3 text-sm">
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m325[0m:[93m27[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m325[0m                           <span className="font-medium text-[var(--foreground)]">{option.option_text}</span>
+[7m   [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m326[0m:[93m27[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m326[0m                           <span className="text-[var(--muted)]">{pct}%</span>
+[7m   [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m328[0m:[93m25[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m328[0m                         <div className="mt-2 h-2 rounded-full bg-white">
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m329[0m:[93m27[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m329[0m                           <div className="h-2 rounded-full bg-[var(--brand)]" style={{ width: `${pct}%` }} />
+[7m   [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m336[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m336[0m                 <p className="text-sm leading-6 text-[var(--muted)]">Poll module can sit here, matching the old right-rail structure.</p>
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m340[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m340[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m341[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m341[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m342[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m342[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m345[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m345[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m347[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m347[0m               <p className="text-sm leading-6 text-[var(--muted)]">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m352[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m352[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m353[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m353[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m354[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m354[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m357[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m357[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m359[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m359[0m               <div className="space-y-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m361[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m361[0m                   <a key={video.video_code} href={`/video-gallery/${video.permalink}`} className="group flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:-translate-y-0.5">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m362[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m362[0m                     <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m363[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m363[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m364[0m                         src={videoThumbUrl(video.video_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m368[0m                         sizes="64px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m369[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m371[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m371[0m                     <div className="min-w-0">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m372[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m372[0m                       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">Video</p>
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m373[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m373[0m                       <h3 className="line-clamp-2 font-medium leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m380[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m380[0m                   <a key={gallery.gallery_code} href={`/photo-gallery/${gallery.permalink}`} className="group flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:-translate-y-0.5">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m381[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m381[0m                     <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m382[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m382[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m383[0m                         src={galleryImageUrl(gallery.gallery_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m387[0m                         sizes="64px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m388[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m390[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m390[0m                     <div className="min-w-0">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m391[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m391[0m                       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">Gallery</p>
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/news/[slug]/page.tsx[0m:[93m392[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m392[0m                       <h3 className="line-clamp-2 font-medium leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m2[0m:[93m113[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/queries' or its corresponding type declarations.
+
+[7m2[0m import { getLatestArticles, getLatestVideos, getLatestGalleries, getCategoryByUrl, getArticlesByCategory } from '@/lib/queries'
+[7m [0m [91m                                                                                                                ~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m3[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/format' or its corresponding type declarations.
+
+[7m3[0m import { formatCompactDate } from '@/lib/format'
+[7m [0m [91m                                  ~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m4[0m:[93m65[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/image' or its corresponding type declarations.
+
+[7m4[0m import { articleImageUrl, videoThumbUrl, galleryImageUrl } from '@/lib/image'
+[7m [0m [91m                                                                ~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m5[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/components/public/fallback-image' or its corresponding type declarations.
+
+[7m5[0m import { FallbackImage } from '@/components/public/fallback-image'
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m47[0m:[93m5[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m47[0m     <main className="pb-12">
+[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m48[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m48[0m       <section className="mx-auto max-w-7xl px-4 pt-6">
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m49[0m         <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)] md:p-5">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m50[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m50[0m           <div className="mb-4 flex items-center gap-3">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m51[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m51[0m             <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m54[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m54[0m             <div className="h-px flex-1 bg-[var(--border)]" />
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m55[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m55[0m             <span className="hidden text-xs uppercase tracking-[0.24em] text-[var(--muted)] md:inline-flex">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m60[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m60[0m           <div className="grid gap-4 lg:grid-cols-[0.72fr_1.28fr_0.92fr]">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m61[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m61[0m             <div className="rounded-[22px] border border-[var(--border)] bg-[var(--surface-muted)] p-3">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m62[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m62[0m               <div className="mb-3 border-b border-[var(--border)] pb-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m65[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m65[0m               <div className="space-y-2">
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m67[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m67[0m                   <a key={article.article_code} href={`/news/${article.permalink}`} className="group flex gap-3 rounded-xl border border-[var(--border)] bg-white p-2 transition hover:border-[var(--brand)]">
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m68[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m68[0m                     <div className="relative h-14 w-14 flex-shrink-0 overflow-hidden rounded-lg">
+[7m  [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m69[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 69[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m 70[0m                         src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 74[0m                         sizes="56px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 75[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m77[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m77[0m                     <h3 className="line-clamp-2 text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m  [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m85[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m85[0m             <div className="min-w-0 rounded-[24px] border border-[var(--border)] bg-[var(--surface-muted)] p-3">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m86[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m86[0m               <a
+[7m  [0m [91m              ~~[0m
+[7m87[0m                 href={leadStory ? `/news/${leadStory.permalink}` : '#'}
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m88[0m                 className="group relative block overflow-hidden rounded-[20px]"
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m89[0m               >
+[7m  [0m [91m~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m90[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m90[0m                 <div className="relative aspect-[16/9]">
+[7m  [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m91[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 91[0m                   <FallbackImage
+[7m   [0m [91m                  ~~~~~~~~~~~~~~[0m
+[7m 92[0m                     src={articleImageUrl(leadStory?.article_code ?? 1)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 96[0m                     sizes="(max-width: 1024px) 100vw, 60vw"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 97[0m                   />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m98[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m98[0m                   <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,35,35,0)_0%,rgba(35,35,35,0.2)_40%,rgba(35,35,35,0.78)_100%)]" />
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m99[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m99[0m                   <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+[7m  [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m100[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m100[0m                     <p className="inline-flex rounded-full bg-[var(--brand-blue)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white shadow-[0_10px_24px_rgba(47,116,184,0.24)]">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m103[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m103[0m                     <h2 className="mt-1 line-clamp-2 font-display text-2xl font-semibold leading-tight md:text-3xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m110[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m110[0m               <div className="mt-3 max-w-full overflow-x-auto pb-1">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m111[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m111[0m                 <div className="flex w-max gap-3 pr-1">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m113[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m113[0m                     <a
+[7m   [0m [91m                    ~~[0m
+[7m114[0m                       key={article.article_code}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m116[0m                       className="group w-52 snap-start overflow-hidden rounded-xl border border-[var(--border)] bg-white transition hover:border-[var(--brand-blue)]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m117[0m                     >
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m118[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m118[0m                       <div className="relative aspect-[4/3] overflow-hidden">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m119[0m:[93m25[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m119[0m                         <FallbackImage
+[7m   [0m [91m                        ~~~~~~~~~~~~~~[0m
+[7m120[0m                           src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m124[0m                           sizes="208px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m125[0m                         />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m127[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m127[0m                       <div className="p-3">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m128[0m:[93m25[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m128[0m                         <h3 className="line-clamp-2 text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m131[0m:[93m42[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m131[0m                         {article.date && <p className="mt-2 text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">{formatCompactDate(article.date)}</p>}
+[7m   [0m [91m                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m139[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m139[0m             <div className="rounded-[22px] border border-[var(--border)] bg-white p-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m140[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m140[0m               <div className="mb-3 border-b border-[var(--border)] pb-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m143[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m143[0m               <div className="space-y-2">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m145[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m145[0m                   <a key={article.article_code} href={`/news/${article.permalink}`} className="flex items-start gap-3 rounded-xl border border-[var(--border)] bg-[var(--surface-muted)] p-2 transition hover:border-[var(--brand-blue)]">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m146[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m146[0m                     <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[var(--brand-blue-soft)] text-xs font-semibold text-[var(--brand-blue-deep)]">{index + 1}</span>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m147[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m147[0m                     <div className="min-w-0">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m148[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m148[0m                       <h3 className="line-clamp-2 text-sm font-semibold leading-5 text-[var(--foreground)]">{article.article_head}</h3>
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m149[0m:[93m40[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m149[0m                       {article.date && <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]">{formatCompactDate(article.date)}</p>}
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m159[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m159[0m       <section className="mx-auto max-w-7xl px-4 py-4">
+[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m160[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m160[0m         <div className="rounded-[24px] border border-[var(--border)] bg-[var(--surface-strong)] px-5 py-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m161[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m161[0m           <div className="mb-4 flex items-center gap-3">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m162[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m162[0m             <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m165[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m165[0m             <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m167[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m167[0m           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m168[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m168[0m             <div className="flex min-h-24 items-center justify-center rounded-2xl border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Ad slot 1</div>
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m169[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m169[0m             <div className="flex min-h-24 items-center justify-center rounded-2xl border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Ad slot 2</div>
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m170[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m170[0m             <div className="flex min-h-24 items-center justify-center rounded-2xl border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Ad slot 3</div>
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m176[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m176[0m         <section className="mx-auto max-w-7xl px-4 py-4">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m177[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m177[0m           <div className="rounded-[24px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)] md:p-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m178[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m178[0m             <div className="mb-4 flex items-center gap-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m179[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m179[0m               <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m182[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m182[0m               <div className="h-px flex-1 bg-[linear-gradient(90deg,var(--brand-blue),var(--border))]" />
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m184[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m184[0m             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m186[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m186[0m                 <a key={article.article_code} href={`/news/${article.permalink}`} className="group block rounded-[18px] border border-[var(--border)] bg-[var(--surface-muted)] p-2 transition hover:-translate-y-0.5 hover:border-[var(--brand-blue)]">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m187[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m187[0m                   <div className="relative mb-3 aspect-[4/3] overflow-hidden rounded-xl">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m188[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m188[0m                     <FallbackImage
+[7m   [0m [91m                    ~~~~~~~~~~~~~~[0m
+[7m189[0m                       src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m193[0m                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m194[0m                     />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m196[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m196[0m                   <h3 className="line-clamp-3 px-1 text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m200[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m200[0m                     <p className="mt-2 px-1 text-[11px] uppercase tracking-[0.2em] text-[var(--brand-blue-deep)]">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m211[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m211[0m       <section className="mx-auto max-w-7xl px-4 py-4">
+[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m212[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m212[0m         <div className="grid gap-6 lg:grid-cols-[minmax(0,1.35fr)_22rem]">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m213[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m213[0m           <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)] md:p-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m214[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m214[0m             <div className="mb-4 flex items-center gap-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m215[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m215[0m               <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m218[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m218[0m               <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m220[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m220[0m             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m222[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m222[0m                 <a
+[7m   [0m [91m                ~~[0m
+[7m223[0m                   key={article.article_code}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m225[0m                   className="group overflow-hidden rounded-[22px] border border-[var(--border)] bg-[var(--surface-muted)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(22,44,29,0.12)]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m226[0m                 >
+[7m   [0m [91m~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m227[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m227[0m                   <div className="relative aspect-[4/3] overflow-hidden">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m228[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m228[0m                     <FallbackImage
+[7m   [0m [91m                    ~~~~~~~~~~~~~~[0m
+[7m229[0m                       src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m233[0m                       className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m234[0m                     />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m235[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m235[0m                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,35,35,0)_0%,rgba(35,35,35,0.12)_46%,rgba(35,35,35,0.62)_100%)]" />
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m237[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m237[0m                   <div className="p-4">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m238[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m238[0m                     <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m241[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m241[0m                     <h3 className="mt-2 line-clamp-3 font-display text-base font-semibold leading-6 text-[var(--foreground)] transition group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m245[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m245[0m                       <p className="mt-2 line-clamp-2 text-sm leading-6 text-[var(--muted)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m250[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m250[0m                       <p className="mt-3 text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m260[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m260[0m           <aside className="space-y-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m261[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m261[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m262[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m262[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m263[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m263[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m266[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m266[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m268[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m268[0m               <div className="space-y-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m270[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m270[0m                   <a key={article.article_code} href={`/news/${article.permalink}`} className="group flex gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:-translate-y-0.5">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m271[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m271[0m                     <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m272[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m272[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m273[0m                         src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m277[0m                         sizes="80px"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m278[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m280[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m280[0m                     <div className="min-w-0">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m281[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m281[0m                       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">Picked</p>
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m282[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m282[0m                       <h3 className="mt-1 line-clamp-3 font-display text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m291[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m291[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m292[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m292[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m293[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m293[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m296[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m296[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m298[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m298[0m               <div className="space-y-2">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m300[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m300[0m                   <a key={article.article_code} href={`/news/${article.permalink}`} className="flex items-start gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:bg-white">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m301[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m301[0m                     <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[rgba(237,50,55,0.1)] text-sm font-semibold text-[var(--brand-strong)]">{index + 1}</span>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m302[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m302[0m                     <div>
+[7m   [0m [91m                    ~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m303[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m303[0m                       <h3 className="line-clamp-2 font-medium leading-6 text-[var(--foreground)]">{article.article_head}</h3>
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m304[0m:[93m40[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m304[0m                       {article.date && <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">{formatCompactDate(article.date)}</p>}
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m311[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m311[0m             <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)]">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m312[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m312[0m               <div className="mb-3 flex items-center gap-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m313[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m313[0m                 <span className="inline-flex rounded-full bg-[var(--brand)] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-white">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m316[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m316[0m                 <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m318[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m318[0m               <div className="space-y-3">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m320[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m320[0m                   <a key={article.article_code} href={`/news/${article.permalink}`} className="group block rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-3 transition hover:-translate-y-0.5">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m321[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m321[0m                     <div className="relative aspect-[16/9] overflow-hidden rounded-xl">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m322[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m322[0m                       <FallbackImage
+[7m   [0m [91m                      ~~~~~~~~~~~~~~[0m
+[7m323[0m                         src={articleImageUrl(article.article_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m327[0m                         sizes="(max-width: 1024px) 100vw, 22rem"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m328[0m                       />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m330[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m330[0m                     <h3 className="mt-3 line-clamp-2 font-display text-sm font-semibold leading-5 text-[var(--foreground)] group-hover:text-[var(--brand-strong)]">
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m342[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m342[0m         <section className="mx-auto max-w-7xl px-4 pb-12">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m343[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m343[0m           <div className="rounded-[28px] border border-[var(--border)] bg-[var(--surface-strong)] p-4 shadow-[var(--shadow-soft)] md:p-5">
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m344[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m344[0m             <div className="mb-4 flex items-center gap-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m345[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m345[0m               <span className="inline-flex rounded-full bg-[var(--brand)] px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m348[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m348[0m               <div className="h-px flex-1 bg-[var(--border)]" />
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m350[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m350[0m             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m352[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m352[0m                 <a key={video.video_code} href={`/video-gallery/${video.permalink}`} className="group overflow-hidden rounded-[22px] border border-[var(--border)] bg-[var(--surface-muted)] transition hover:-translate-y-0.5">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m353[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m353[0m                   <div className="relative aspect-[16/10] overflow-hidden">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m354[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m354[0m                     <FallbackImage
+[7m   [0m [91m                    ~~~~~~~~~~~~~~[0m
+[7m355[0m                       src={videoThumbUrl(video.video_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m359[0m                       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m360[0m                     />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m361[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m361[0m                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,35,35,0.06)_0%,rgba(35,35,35,0.56)_100%)]" />
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m362[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m362[0m                     <div className="absolute left-4 top-4 rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand-strong)]">Video</div>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m364[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m364[0m                   <div className="p-4">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m365[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m365[0m                     <h3 className="line-clamp-2 font-display text-base font-semibold leading-6 text-[var(--foreground)]">{video.video_head}</h3>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m370[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m370[0m                 <a key={gallery.gallery_code} href={`/photo-gallery/${gallery.permalink}`} className="group overflow-hidden rounded-[22px] border border-[var(--border)] bg-[var(--surface-muted)] transition hover:-translate-y-0.5">
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m371[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m371[0m                   <div className="relative aspect-[16/10] overflow-hidden">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m372[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m372[0m                     <FallbackImage
+[7m   [0m [91m                    ~~~~~~~~~~~~~~[0m
+[7m373[0m                       src={galleryImageUrl(gallery.gallery_code)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m377[0m                       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m378[0m                     />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m379[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m379[0m                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,35,35,0.06)_0%,rgba(35,35,35,0.56)_100%)]" />
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m380[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m380[0m                     <div className="absolute left-4 top-4 rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand-strong)]">Gallery</div>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m382[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m382[0m                   <div className="p-4">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m383[0m:[93m21[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m383[0m                     <h3 className="line-clamp-2 font-display text-base font-semibold leading-6 text-[var(--foreground)]">{gallery.gallery_head}</h3>
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m392[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m392[0m       <section className="mx-auto max-w-7xl px-4 pb-12">
+[7m   [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m393[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m393[0m         <div className="grid gap-4 md:grid-cols-3">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m394[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m394[0m           <div className="flex min-h-24 items-center justify-center rounded-[22px] border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Advertisement</div>
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m395[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m395[0m           <div className="flex min-h-24 items-center justify-center rounded-[22px] border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Advertisement</div>
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/page.tsx[0m:[93m396[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m396[0m           <div className="flex min-h-24 items-center justify-center rounded-[22px] border border-dashed border-[var(--border)] bg-[var(--surface-muted)] text-sm text-[var(--muted)]">Advertisement</div>
+[7m   [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m4[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/components/public/fallback-image' or its corresponding type declarations.
+
+[7m4[0m import { FallbackImage } from '@/components/public/fallback-image'
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m5[0m:[93m39[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/queries' or its corresponding type declarations.
+
+[7m5[0m import { getGalleryByPermalink } from '@/lib/queries'
+[7m [0m [91m                                      ~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m6[0m:[93m42[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/image' or its corresponding type declarations.
+
+[7m6[0m import { galleryImageUrl, logoUrl } from '@/lib/image'
+[7m [0m [91m                                         ~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m7[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/types' or its corresponding type declarations.
+
+[7m7[0m import { LANG_CODE_MAP } from '@/lib/types'
+[7m [0m [91m                              ~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m64[0m:[93m5[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m64[0m     <>
+[7m  [0m [91m    ~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m65[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m65[0m       <script
+[7m  [0m [91m      ~~~~~~~[0m
+[7m66[0m         type="application/ld+json"
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m67[0m         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m68[0m       />
+[7m  [0m [91m~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m69[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m69[0m       <main className="max-w-6xl mx-auto px-4 py-8">
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m70[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m70[0m         <nav className="text-sm text-gray-500 mb-4">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m71[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m71[0m           <Link href="/" className="hover:underline">Home</Link>
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m73[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m73[0m           <Link href="/photo-gallery" className="hover:underline">Photo Gallery</Link>
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m75[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m75[0m           <span>{gallery.gallery_head}</span>
+[7m  [0m [91m          ~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m78[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m78[0m         <h1 className="text-2xl font-bold mb-2">{gallery.gallery_head}</h1>
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m81[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m81[0m           <p className="text-gray-600 mb-6">{gallery.gallery_desc}</p>
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m85[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m85[0m         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m87[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m87[0m               <div key={i} className="aspect-square bg-gray-100 rounded overflow-hidden">
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app/photo-gallery/[slug]/page.tsx[0m:[93m88[0m:[93m17[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 88[0m                 <FallbackImage
+[7m   [0m [91m                ~~~~~~~~~~~~~~[0m
+[7m 89[0m                   src={galleryImageUrl(gallery.gallery_code, i)}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 94[0m                   loading={i > 1 ? 'lazy' : undefined}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 95[0m                 />
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m1[0m:[93m31[0m - [91merror[0m[90m TS6142: [0mModule './fallback-image' was resolved to '/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/src/components/public/fallback-image.tsx', but '--jsx' is not set.
+
+[7m1[0m import { FallbackImage } from './fallback-image'
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m3[0m:[93m25[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/image' or its corresponding type declarations.
+
+[7m3[0m import { logoUrl } from '@/lib/image'
+[7m [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m35[0m:[93m5[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m35[0m     <div>
+[7m  [0m [91m    ~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m36[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m36[0m       <header className="border-b border-[var(--border)] bg-white">
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m37[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m37[0m         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm text-[var(--foreground)]">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m38[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m38[0m           <p>{dateLabel}</p>
+[7m  [0m [91m          ~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m39[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m39[0m           <div className="hidden items-center gap-2 md:flex">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m40[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m40[0m             <span className="h-2 w-2 rounded-full bg-[var(--brand-blue)]" />
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m41[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m41[0m             <span>Punjab Newsline Daily</span>
+[7m  [0m [91m            ~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m45[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m45[0m         <div className="mx-auto max-w-7xl px-4 py-4">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m46[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m46[0m           <Link href="/" className="flex items-center justify-center text-center">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m47[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 47[0m             <FallbackImage
+[7m   [0m [91m            ~~~~~~~~~~~~~~[0m
+[7m 48[0m               src={logoUrl()}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 53[0m               className="h-auto w-full max-w-[240px] object-contain md:max-w-[320px]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 54[0m             />
+[7m   [0m [91m~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m58[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m58[0m         <div className="bg-[var(--brand)] text-white">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m59[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m59[0m           <nav className="mx-auto flex max-w-7xl items-center gap-1 overflow-x-auto px-2 py-2 md:gap-2 md:px-4" aria-label="Primary">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m60[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m60[0m             <Link href="/" className="shrink-0 rounded px-3 py-2 text-sm font-semibold transition hover:bg-black/15">Home</Link>
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m62[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m62[0m               <Link key={item.href} href={item.href} className="shrink-0 rounded px-3 py-2 text-sm font-medium transition hover:bg-black/15">
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m66[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m66[0m             <Link href="/video-gallery" className="shrink-0 rounded px-3 py-2 text-sm font-medium transition hover:bg-black/15">Video Gallery</Link>
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m67[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m67[0m             <Link href="/photo-gallery" className="shrink-0 rounded px-3 py-2 text-sm font-medium transition hover:bg-black/15">Photo Gallery</Link>
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m71[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m71[0m         <div className="border-b border-[var(--border)] bg-white">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m72[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m72[0m           <div className="mx-auto grid max-w-7xl grid-cols-[8rem_1fr] items-center gap-3 px-4 py-2 md:grid-cols-[10rem_1fr_14rem]">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m73[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m73[0m             <div className="rounded bg-[var(--brand)] px-2 py-1 text-center text-xs font-semibold uppercase tracking-[0.16em] text-white">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m76[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m76[0m             <div className="ticker-wrap overflow-hidden text-sm text-[var(--foreground)]">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m77[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m77[0m               <p className="ticker-text whitespace-nowrap">
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m81[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m81[0m             <div className="hidden justify-end md:flex">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m82[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 82[0m               <input
+[7m   [0m [91m              ~~~~~~[0m
+[7m 83[0m                 type="search"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 85[0m                 className="h-9 w-full max-w-[13rem] rounded border border-[var(--border)] px-3 text-sm outline-none transition focus:border-[var(--brand)]"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 86[0m               />
+[7m   [0m [91m~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m94[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m94[0m       <footer className="mt-10 border-t border-[var(--border)] bg-white">
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m95[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m95[0m         <div className="mx-auto max-w-7xl px-4 py-10">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m96[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m96[0m           <div className="grid gap-4 md:grid-cols-3">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m97[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m97[0m             <div>
+[7m  [0m [91m            ~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m98[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 98[0m               <FallbackImage
+[7m   [0m [91m              ~~~~~~~~~~~~~~[0m
+[7m 99[0m                 src={logoUrl()}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m103[0m                 className="h-auto w-full max-w-[220px] object-contain"
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m104[0m               />
+[7m   [0m [91m~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m105[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m105[0m               <p className="mt-2 text-sm text-[var(--muted)]">Regional reporting with national context in Punjabi, Hindi, and English.</p>
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m107[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m107[0m             <div className="md:col-span-2">
+[7m   [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m108[0m:[93m15[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m108[0m               <div className="flex flex-wrap gap-2">
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m110[0m:[93m19[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m110[0m                   <Link key={item.href} href={item.href} className="rounded border border-[var(--border)] bg-[var(--surface-muted)] px-3 py-2 text-sm transition hover:border-[var(--brand)] hover:text-[var(--brand)]">
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/site-chrome.tsx[0m:[93m118[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m118[0m         <div className="bg-[var(--brand)] px-4 py-3 text-center text-sm text-white">
+[7m   [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m1[0m:[93m31[0m - [91merror[0m[90m TS6142: [0mModule './fallback-image' was resolved to '/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline/src/components/public/fallback-image.tsx', but '--jsx' is not set.
+
+[7m1[0m import { FallbackImage } from './fallback-image'
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m3[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/types' or its corresponding type declarations.
+
+[7m3[0m import type { Article } from '@/lib/types'
+[7m [0m [91m                             ~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m4[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/image' or its corresponding type declarations.
+
+[7m4[0m import { articleImageUrl } from '@/lib/image'
+[7m [0m [91m                                ~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m5[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module '@/lib/format' or its corresponding type declarations.
+
+[7m5[0m import { formatCompactDate } from '@/lib/format'
+[7m [0m [91m                                  ~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m20[0m:[93m5[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 20[0m     <Link
+[7m   [0m [91m    ~~~~~[0m
+[7m 21[0m       href={`/news/${article.permalink}`}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 24[0m       }`}
+[7m   [0m [91m~~~~~~~~~[0m
+[7m 25[0m     >
+[7m   [0m [91m~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m26[0m:[93m7[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m26[0m       <div className={`relative ${featured ? 'aspect-[16/10]' : compact ? 'aspect-[16/10]' : 'aspect-[4/3]'}`}>
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m27[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m 27[0m         <FallbackImage
+[7m   [0m [91m        ~~~~~~~~~~~~~~[0m
+[7m 28[0m           src={imageUrl}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m...[0m 
+[7m 32[0m           sizes={featured ? '(max-width: 768px) 100vw, 66vw' : '(max-width: 768px) 100vw, 33vw'}
+[7m   [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[7m 33[0m         />
+[7m   [0m [91m~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m34[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m34[0m         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(35,35,35,0.02)_0%,rgba(35,35,35,0.15)_45%,rgba(35,35,35,0.8)_100%)]" />
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m35[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m35[0m         <div className="absolute left-4 top-4 inline-flex rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--brand-strong)] backdrop-blur">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m38[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m38[0m         <div className="absolute inset-x-0 bottom-0 p-5 text-white">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m39[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m39[0m           <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/75">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m42[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m42[0m           <h3 className={`mt-2 font-display font-semibold tracking-tight ${featured ? 'text-2xl md:text-4xl' : compact ? 'text-lg md:text-xl' : 'text-xl md:text-2xl'}`}>
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m46[0m:[93m13[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m46[0m             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85 md:text-base">
+[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m53[0m:[93m9[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m53[0m         <div className="space-y-2 p-4">
+[7m  [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m54[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m54[0m           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--brand)]">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m57[0m:[93m11[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m57[0m           <h3 className="line-clamp-2 font-display text-base font-semibold leading-6 text-[var(--foreground)] transition group-hover:text-[var(--brand-strong)]">
+[7m  [0m [91m          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/components/public/story-card.tsx[0m:[93m60[0m:[93m23[0m - [91merror[0m[90m TS17004: [0mCannot use JSX unless the '--jsx' flag is provided.
+
+[7m60[0m           {summary && <p className="line-clamp-2 text-sm leading-6 text-[var(--muted)]">{summary}</p>}
+[7m  [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+Found 334 errors in 34 files.
+
+Errors  Files
+     1  node_modules/next/dist/build/webpack/loaders/next-app-loader/index.d.ts[90m:1[0m
+     1  node_modules/next/dist/client/components/catch-error.d.ts[90m:2[0m
+     1  node_modules/next/dist/client/components/error-boundary.d.ts[90m:1[0m
+     1  node_modules/next/dist/client/components/http-access-fallback/error-boundary.d.ts[90m:11[0m
+     1  node_modules/next/dist/client/components/layout-router.d.ts[90m:3[0m
+     1  node_modules/next/dist/client/components/segment-cache/cache.d.ts[90m:104[0m
+     1  node_modules/next/dist/client/image-component.d.ts[90m:1[0m
+     1  node_modules/next/dist/client/link.d.ts[90m:1[0m
+     1  node_modules/next/dist/client/script.d.ts[90m:1[0m
+     1  node_modules/next/dist/client/with-router.d.ts[90m:1[0m
+     1  node_modules/next/dist/lib/metadata/metadata.d.ts[90m:1[0m
+     1  node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.d.ts[90m:1[0m
+     1  node_modules/next/dist/pages/_app.d.ts[90m:1[0m
+     1  node_modules/next/dist/pages/_document.d.ts[90m:1[0m
+     1  node_modules/next/dist/pages/_error.d.ts[90m:1[0m
+     1  node_modules/next/dist/server/app-render/types.d.ts[90m:10[0m
+     4  node_modules/next/dist/server/web/spec-extension/adapters/headers.d.ts[90m:39[0m
+     1  node_modules/next/dist/shared/lib/app-router-context.shared-runtime.d.ts[90m:4[0m
+     1  node_modules/next/dist/shared/lib/app-router-types.d.ts[90m:7[0m
+     1  node_modules/next/dist/shared/lib/dynamic.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/head.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/image-config-context.shared-runtime.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/loadable-context.shared-runtime.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/loadable.shared-runtime.d.ts[90m:21[0m
+     1  node_modules/next/dist/shared/lib/router-context.shared-runtime.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/server-inserted-html.shared-runtime.d.ts[90m:1[0m
+     1  node_modules/next/dist/shared/lib/utils.d.ts[90m:10[0m
+     1  node_modules/next/dist/styled-jsx/types/global.d.ts[90m:1[0m
+    99  src/app/news/[slug]/page.tsx[90m:4[0m
+   135  src/app/page.tsx[90m:2[0m
+    16  src/app/photo-gallery/[slug]/page.tsx[90m:4[0m
+    35  src/components/public/site-chrome.tsx[90m:1[0m
+    17  src/components/public/story-card.tsx[90m:1[0m
