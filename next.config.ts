@@ -2,11 +2,14 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   output: 'standalone',
+  cacheMaxMemorySize: 52428800, // 50MB
   serverExternalPackages: ['pg'],
   experimental: {
     serverMinification: false,
+    isrFlushToDisk: false,
   },
   images: {
+    unoptimized: true,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [

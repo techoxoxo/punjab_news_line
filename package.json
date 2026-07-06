@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack && node scripts/make-build-portable.mjs",
     "start": "next start",
     "lint": "eslint",
     "validate:r2-images": "node scripts/validate-r2-images.mjs",
@@ -15,14 +15,16 @@
     "@aws-sdk/client-s3": "^3.1032.0",
     "@aws-sdk/s3-request-presigner": "^3.1032.0",
     "@headlessui/react": "^2.2.10",
-    "@tiptap/extension-character-count": "^3.22.5",
-    "@tiptap/extension-image": "^3.22.5",
-    "@tiptap/extension-link": "^3.22.5",
-    "@tiptap/extension-placeholder": "^3.22.5",
-    "@tiptap/extension-youtube": "^3.22.5",
-    "@tiptap/pm": "^3.22.4",
-    "@tiptap/react": "^3.22.4",
-    "@tiptap/starter-kit": "^3.22.4",
+    "@tiptap/core": "3.23.2",
+    "@tiptap/extension-character-count": "3.23.2",
+    "@tiptap/extension-image": "3.23.2",
+    "@tiptap/extension-link": "3.23.2",
+    "@tiptap/extension-placeholder": "3.23.2",
+    "@tiptap/extension-youtube": "3.23.2",
+    "@tiptap/extensions": "3.23.2",
+    "@tiptap/pm": "3.23.2",
+    "@tiptap/react": "3.23.2",
+    "@tiptap/starter-kit": "3.23.2",
     "@types/pg": "^8.20.0",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.38.0",
@@ -45,5 +47,12 @@
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@tiptap/core": "3.23.2",
+    "@tiptap/pm": "3.23.2",
+    "@tiptap/react": "3.23.2",
+    "@tiptap/starter-kit": "3.23.2",
+    "@tiptap/extensions": "3.23.2"
   }
 }

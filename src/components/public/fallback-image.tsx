@@ -49,7 +49,7 @@ export function FallbackImage({ src, fallbackSrc, alt, onError, className, ...pr
     ? `${className?.replace('object-cover', 'object-contain') || ''} bg-slate-50 p-1.5 opacity-60`
     : className
 
-  const isUnoptimized = currentSrc.includes('?')
+  const isUnoptimized = true
   
   return (
     <Image

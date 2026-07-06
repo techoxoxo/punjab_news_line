@@ -48,8 +48,11 @@ export default withAuth(
         if (res.ok) {
             const data = await res.json() as { destination: string; type: number } | null
             if (data?.destination) {
-                const status = data.type === 302 ? 307 : 308
-                return NextResponse.redirect(new URL(data.destination, request.url), { status })
+                const destination = new URL(data.destination, request.url)
+                if (destination.pathname !== pathname) {
+                    const status = data.type === 302 ? 307 : 308
+                    return NextResponse.redirect(destination, { status })
+                }
             }
         }
     } catch {

@@ -26,6 +26,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical,
       languages: locale ? { [locale]: canonical } : undefined,
     },
+    openGraph: {
+      title: title ?? 'Opinion Poll',
+      type: 'website',
+      url: canonical,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title ?? 'Opinion Poll',
+    },
   }
 }
 

@@ -48,6 +48,7 @@ export default function NewStoryPage() {
     cgry_code: 21, 
     cgry_list: [] as number[],
     group_list: [] as number[],
+    sgmt_list: [] as number[],
     permalink: '',
     meta_title: '',
     meta_desc: '',
@@ -130,6 +131,15 @@ export default function NewStoryPage() {
         ? prev.group_list.filter(c => c !== code)
         : [...prev.group_list, code]
       return { ...prev, group_list: list }
+    })
+  }
+
+  const handleSegmentToggle = (code: number) => {
+    setFormData(prev => {
+      const list = prev.sgmt_list.includes(code)
+        ? prev.sgmt_list.filter(s => s !== code)
+        : [...prev.sgmt_list, code]
+      return { ...prev, sgmt_list: list }
     })
   }
 
@@ -222,7 +232,8 @@ export default function NewStoryPage() {
         body: JSON.stringify({
           ...formData,
           cgry_list: formData.cgry_list.join(','),
-          group_list: formData.group_list.join(',')
+          group_list: formData.group_list.join(','),
+          sgmt_list: formData.sgmt_list.join(',')
         }),
       })
       if (res.ok) {
@@ -693,6 +704,27 @@ export default function NewStoryPage() {
                         className="hidden"
                       />
                       <span className="text-[11px] font-bold text-white/60 group-hover:text-white">{c.name}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Multi-Segment Selection */}
+              <div className="space-y-4">
+                <label className="text-[10px] font-black uppercase tracking-widest text-slate-500">Multi-Segment Selection</label>
+                <div className="bg-white/[0.03] rounded-3xl p-4 border border-white/5 space-y-1">
+                  {(editorData.segments || []).map((s: any) => (
+                    <label key={s.code} className="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 cursor-pointer group transition-all">
+                      <div className={`h-4 w-4 rounded border flex items-center justify-center transition-all ${formData.sgmt_list.includes(s.code) ? 'bg-brand border-brand' : 'border-white/20 bg-transparent'}`}>
+                        {formData.sgmt_list.includes(s.code) && <Check className="h-3 w-3 text-white stroke-[4]" />}
+                      </div>
+                      <input 
+                        type="checkbox"
+                        checked={formData.sgmt_list.includes(s.code)}
+                        onChange={() => handleSegmentToggle(s.code)}
+                        className="hidden"
+                      />
+                      <span className="text-[11px] font-bold text-white/60 group-hover:text-white">{s.name}</span>
                     </label>
                   ))}
                 </div>

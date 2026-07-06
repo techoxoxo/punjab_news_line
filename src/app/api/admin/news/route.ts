@@ -39,8 +39,9 @@ export async function POST(request: Request) {
         photo_caption,
         sgmt_code,
         team_code,
-        mode_code
-      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, NOW(), $11, 0, $12, $13, $14, $15, $16, $17, $18, $19, $20)
+        mode_code,
+        sgmt_list
+      ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, NOW(), $11, 0, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21)
       RETURNING article_code`,
       [
         nextCode,
@@ -62,7 +63,8 @@ export async function POST(request: Request) {
         data.photo_caption || '',
         data.sgmt_code || 17, // Default to General
         data.team_code || 2,  // Default to General
-        data.mode_code || 27  // Default to News
+        data.mode_code || 27, // Default to News
+        data.sgmt_list || ''
       ]
     )
 

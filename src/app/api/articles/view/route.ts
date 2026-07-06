@@ -6,7 +6,7 @@ import { query } from '@/lib/db'
 // This map lives per-instance (per-pod), which is fine — minor double-counts across
 // pods are acceptable. A Redis-based solution can be added later for strict accuracy.
 const recentViews = new Map<string, number>()
-const COOLDOWN_MS = 5 * 60 * 1000 // Reduced to 5 minutes for better accuracy
+const COOLDOWN_MS = 60 * 1000 // Reduced to 1 minute for better accuracy
 
 // Periodically clean up old entries to prevent memory leak
 setInterval(() => {
@@ -16,7 +16,7 @@ setInterval(() => {
       recentViews.delete(key)
     }
   }
-}, 5 * 60 * 1000) // clean up every 5 minutes
+}, 60 * 1000) // clean up every minute
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
 
     // Get real visitor IP
     const ip =
+      req.headers.get('cf-connecting-ip') ??
       req.headers.get('x-real-ip') ??
       req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ??
       'unknown'
@@ -42,11 +43,11 @@ export async function POST(req: NextRequest) {
     // - Common crawlers/bots
     // - Social media PREVIEW bots (usually missing Mozilla/5.0)
     // - We want to COUNT real users in WhatsApp/FB in-app browsers
-    const isCommonBot = /bot|crawl|spider|slurp|facebookexternalhit|twitterbot|linkedinbot|google.*preview|preview.*google/i.test(ua)
+    const isCommonBot = /bot|crawl|spider|slurp|facebookexternalhit|twitterbot|linkedinbot|google.*preview|preview.*google|headless|lighthouse/i.test(ua)
     const isSocialPreview = (ua.includes('WhatsApp') || ua.includes('Telegram')) && !ua.includes('Mozilla/')
     
-    if (isCommonBot || isSocialPreview) {
-      return NextResponse.json({ counted: false, reason: 'bot' })
+    if (isCommonBot || isSocialPreview || ip === 'unknown') {
+      return NextResponse.json({ counted: false, reason: ip === 'unknown' ? 'no-ip' : 'bot' })
     }
 
     // Dedup check

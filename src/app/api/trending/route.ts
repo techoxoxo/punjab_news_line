@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server'
-import { getSpotlightArticles, getArticlesBySegment } from '@/lib/queries'
+import { getSpotlightArticles, getArticlesBySegment, getBreakingArticles } from '@/lib/queries'
 
 export async function GET() {
   try {
     const [breaking, topMost, topNews] = await Promise.all([
-      getArticlesBySegment(17, 1, 5), // Breaking News (General/Latest: 17)
+      getBreakingArticles(5),         // Breaking News (Group 58)
       getSpotlightArticles(5),        // Top Most (Spotlight: 15)
       getArticlesBySegment(16, 1, 5), // Top News (Segment 16)
     ])

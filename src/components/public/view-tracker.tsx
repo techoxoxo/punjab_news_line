@@ -8,13 +8,7 @@ interface ViewTrackerProps {
 }
 
 export function ViewTracker({ code, type = 'article' }: ViewTrackerProps) {
-  const tracked = useRef(false)
-
   useEffect(() => {
-    // Only track once per mount/code change
-    if (tracked.current) return
-    tracked.current = true
-
     const payload = JSON.stringify({ 
       articleCode: code, // keep naming for backward compatibility if needed, but API now uses type
       type 
@@ -31,8 +25,6 @@ export function ViewTracker({ code, type = 'article' }: ViewTrackerProps) {
         headers: { 'Content-Type': 'application/json' },
         body: payload,
         keepalive: true,
-      }).catch(() => {
-        // Silently ignore — view tracking is non-critical
       })
     }
   }, [code, type])

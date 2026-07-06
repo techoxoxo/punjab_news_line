@@ -3,6 +3,8 @@ import {
   getArticlesByCategory, 
   getArticlesBySegment,
   getSpotlightArticles,
+  getBreakingArticles,
+  getPopularArticles,
   getArticleCountByCategory,
   getActivePoll, 
   getLatestGalleries, 
@@ -22,6 +24,16 @@ import { Pagination } from '@/components/public/pagination'
 import { AdPlacement } from '@/components/public/ad-placement'
 import { Camera, PlayCircle } from 'lucide-react'
 import { OpinionPoll } from '@/components/public/opinion-poll'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://punjabnewsline.com'
+  return {
+    alternates: {
+      canonical: siteUrl,
+    },
+  }
+}
 
 type Props = {
   searchParams: Promise<{ page?: string }>
@@ -44,7 +56,10 @@ export default async function HomePage({ searchParams }: Props) {
     galleries,
     videos,
     totalArticleCount,
-    ads
+    ads,
+    punjabArticles,
+    breakingArticles,
+    popularArticles
   ] = await Promise.all([
     getSpotlightArticles(10), // Spotlight Logic: All today, min 10
     getArticlesBySegment(16, 1, 8),  // Top News: 16
@@ -56,13 +71,15 @@ export default async function HomePage({ searchParams }: Props) {
     getLatestGalleries(4),
     getLatestVideos(4),
     getArticleCount(),
-    getActiveAdvertisements()
+    getActiveAdvertisements(),
+    getArticlesByCategory(21, 1, 5), // Punjab Hub Category: 21
+    getBreakingArticles(2),
+    getPopularArticles(4, 7) // Trending/Most Read: 4 articles from last 7 days
   ])
   
   // Data slicing for the complex grid (only if we're on page 1)
   const isFirstPage = currentPage === 1
   const leftHeadlines = topNewsArticles
-  const punjabArticles = latestStories.filter(a => a.category_name?.toLowerCase().includes('punjab')).slice(0, 5)
   const totalPages = Math.ceil(totalArticleCount / limit)
 
   // Map PollX options to a displayable array
@@ -117,6 +134,15 @@ export default async function HomePage({ searchParams }: Props) {
       />
       <main className="pb-24">
 
+      {/* Mobile-first: Show ad campaigns before everything else on mobile */}
+      {isFirstPage && (
+        <section className="lg:hidden container mx-auto px-2 pt-4 space-y-3">
+          <AdPlacement ads={ads} page="homepage" position="top" />
+          <AdPlacement ads={ads} page="home" position="left" />
+          <AdPlacement ads={ads} page="homepage" position="right" />
+        </section>
+      )}
+
       {/* 1. Hero Section - Only show on first page to emphasize latest news */}
       {isFirstPage && (
         <section className="container mx-auto max-w-8xl px-2 sm:px-4 lg:px-8 pt-6">
@@ -125,9 +151,17 @@ export default async function HomePage({ searchParams }: Props) {
               
               {/* Left: Top News */}
               <div className="space-y-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="h-6 w-1 rounded-full bg-brand" />
-                  <h2 className="font-display text-base font-black uppercase tracking-[0.2em] text-slate-900">Top News</h2>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <span className="h-6 w-1 rounded-full bg-brand" />
+                    <h2 className="font-display text-base font-black uppercase tracking-[0.2em] text-slate-900">Top News</h2>
+                  </div>
+                  <Link 
+                    href="/top-news" 
+                    className="text-[10px] font-black uppercase tracking-widest text-brand hover:text-slate-900 transition-colors"
+                  >
+                    See All
+                  </Link>
                 </div>
                 <div className="space-y-3">
                   {leftHeadlines.map((article, idx) => (
@@ -145,10 +179,13 @@ export default async function HomePage({ searchParams }: Props) {
                       </h3>
                     </Link>
                   ))}
-                </div>
-                {/* Sidebar Ad Placement to fill space */}
-                <div className="pt-8 border-t border-slate-50">
-                  <AdPlacement ads={ads} page="home" position="left" />
+                  
+                  <Link href="/top-news" className="mt-4 flex items-center justify-center gap-3 w-full py-5 rounded-2xl bg-slate-900 font-black text-[10px] uppercase tracking-[0.2em] text-white hover:bg-brand transition-all shadow-xl shadow-slate-900/10">
+                    See All Top News
+                    <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
 
@@ -159,8 +196,9 @@ export default async function HomePage({ searchParams }: Props) {
                 )}
 
                 {/* Secondary Breaking Cards - Fills space and ensures no white gaps */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                    {latestStories.slice(10, 12).map((article) => (
+                {breakingArticles.length > 0 && (
+                  <div className={`grid grid-cols-1 ${breakingArticles.length > 1 ? 'md:grid-cols-2' : ''} gap-6 mt-8`}>
+                    {breakingArticles.map((article) => (
                       <Link 
                         key={article.article_code} 
                         href={`/news/${article.permalink}`}
@@ -176,11 +214,48 @@ export default async function HomePage({ searchParams }: Props) {
                         </div>
                       </Link>
                     ))}
-                </div>
+                  </div>
+                )}
+
+                {/* Trending Stories Widget - Fills the empty space with premium content */}
+                {popularArticles.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-slate-100 space-y-6">
+                    <div className="flex items-center gap-4">
+                      <span className="h-6 w-1 rounded-full bg-brand" />
+                      <h2 className="font-display text-base font-black uppercase tracking-[0.2em] text-slate-900">Trending Stories</h2>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                      {popularArticles.map((article, idx) => (
+                        <Link
+                          key={article.article_code}
+                          href={`/news/${article.permalink}`}
+                          className="flex gap-4 group items-start"
+                        >
+                          <span className="font-display text-xl font-black text-slate-200 group-hover:text-brand transition-colors duration-300 w-6 select-none leading-none">
+                            {String(idx + 1).padStart(2, '0')}
+                          </span>
+                          <div className="flex-1 space-y-1">
+                            <h3 className="font-display text-xs font-bold leading-snug text-slate-700 group-hover:text-brand transition-colors duration-300 line-clamp-2 font-semibold">
+                              {decodeHtml(article.article_head)}
+                            </h3>
+                            <div className="flex items-center gap-2 text-[9px] font-black text-slate-400 uppercase tracking-wider">
+                              <span className="text-brand-blue font-bold">{article.category_name}</span>
+                              <span className="h-1 w-1 rounded-full bg-slate-200" />
+                              <span>{formatCompactDate(article.date)}</span>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Right: Punjab Regional */}
               <div className="space-y-6">
+                {/* Sidebar Ad - Showing top-positioned ad content */}
+                <AdPlacement ads={ads} page="homepage" position="top" />
+
                 <div className="flex items-center gap-4 mb-4">
                   <span className="h-6 w-1 rounded-full bg-brand-blue" />
                   <h2 className="font-display text-base font-black uppercase tracking-[0.2em] text-slate-900">Punjab Hub</h2>
@@ -205,9 +280,6 @@ export default async function HomePage({ searchParams }: Props) {
                     </svg>
                   </Link>
                 </div>
-
-                {/* Sidebar Ad - Showing top-positioned ad content */}
-                <AdPlacement ads={ads} page="homepage" position="top" />
               </div>
             </div>
           </div>

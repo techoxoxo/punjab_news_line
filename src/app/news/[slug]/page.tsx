@@ -20,7 +20,6 @@ import { ArticleGallery } from '@/components/public/article-gallery'
 import { ShareButton } from '@/components/public/share-button'
 
 export const revalidate = 3600
-export const dynamic = 'force-dynamic'
 
 type Props = {
   params: Promise<{ slug: string }>

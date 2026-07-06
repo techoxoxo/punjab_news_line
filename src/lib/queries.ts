@@ -215,19 +215,28 @@ export const getArticlesByCategory = cache(async (
      FROM ox_article a
      LEFT JOIN ox_acategory c ON a.cgry_code = c.acgr_code
      LEFT JOIN ox_code oc ON a.cgry_code = oc.cgry_code
-     WHERE a.cgry_code = $1 AND a.active = 2 
-     ORDER BY a.article_code DESC LIMIT $2 OFFSET $3`,
+      WHERE (a.cgry_code = $1 OR string_to_array(a.cgry_list, ',') @> ARRAY[$1::text]) AND a.active = 2 
+      ORDER BY a.article_code DESC LIMIT $2 OFFSET $3`,
     [cgryCcode, limit, offset]
   )
 })
 
 export const getArticleCountByCategory = cache(async (cgryCode: number): Promise<number> => {
   const rows = await query<{ count: string }>(
-    `SELECT COUNT(*) as count FROM ox_article WHERE cgry_code = $1 AND active = 2`,
+    `SELECT COUNT(*) as count FROM ox_article WHERE (cgry_code = $1 OR string_to_array(cgry_list, ',') @> ARRAY[$1::text]) AND active = 2`,
     [cgryCode]
   )
   return parseInt(rows[0]?.count ?? '0')
 })
+
+export const getArticleCountBySegment = cache(async (sgmtCode: number): Promise<number> => {
+  const rows = await query<{ count: string }>(
+    `SELECT COUNT(*) as count FROM ox_article WHERE (sgmt_code = $1 OR string_to_array(sgmt_list, ',') @> ARRAY[$1::text]) AND active = 2`,
+    [sgmtCode]
+  )
+  return parseInt(rows[0]?.count ?? '0')
+})
+
 
 export const getArticlesBySegment = cache(async (
   sgmtCode: number,
@@ -258,8 +267,8 @@ export const getArticlesBySegment = cache(async (
      FROM ox_article a
      LEFT JOIN ox_acategory c ON a.cgry_code = c.acgr_code
      LEFT JOIN ox_code oc ON a.cgry_code = oc.cgry_code
-     WHERE a.sgmt_code = $1 AND a.active = 2 
-     ORDER BY a.date DESC LIMIT $2 OFFSET $3`,
+      WHERE (a.sgmt_code = $1 OR string_to_array(a.sgmt_list, ',') @> ARRAY[$1::text]) AND a.active = 2 
+      ORDER BY a.date DESC LIMIT $2 OFFSET $3`,
     [sgmtCode, limit, offset]
   )
 })
@@ -286,14 +295,15 @@ export const getSpotlightArticles = cache(async (minLimit = 10): Promise<Article
         WHEN 18 THEN 'diaspora' WHEN 19 THEN 'environment' WHEN 20 THEN 'national' WHEN 21 THEN 'punjab'
         WHEN 22 THEN 'crime-law' WHEN 24 THEN 'travel' WHEN 25 THEN 'films-tv' WHEN 26 THEN 'life-style'
         WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'uttarakhand'
+        WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'Uttarakhand'
         ELSE oc.cgry_url
       END as category_url 
      FROM ox_article a
      LEFT JOIN ox_acategory c ON a.cgry_code = c.acgr_code
      LEFT JOIN ox_code oc ON a.cgry_code = oc.cgry_code
-     WHERE a.sgmt_code = 15 AND a.active = 2 
-     ORDER BY a.date DESC 
-     LIMIT 30`,
+      WHERE (a.sgmt_code = 15 OR string_to_array(a.sgmt_list, ',') @> ARRAY['15']) AND a.active = 2 
+      ORDER BY a.date DESC 
+      LIMIT 30`,
     []
   ).then(articles => {
     // We want ALL of today, but if today has < 10, we keep at least 10.
@@ -313,6 +323,73 @@ export const getSpotlightArticles = cache(async (minLimit = 10): Promise<Article
   })
 })
 
+export const getBreakingArticles = cache(async (limit = 2): Promise<Article[]> => {
+  return query<Article>(
+    `SELECT a.*, 
+      CASE a.cgry_code
+        WHEN 6 THEN 'Business' WHEN 7 THEN 'Haryana' WHEN 8 THEN 'Political' WHEN 9 THEN 'Human Interest'
+        WHEN 10 THEN 'Chandigarh' WHEN 11 THEN 'Global News' WHEN 12 THEN 'Health' WHEN 13 THEN 'Technology'
+        WHEN 14 THEN 'Sports' WHEN 15 THEN 'Education' WHEN 16 THEN 'Opinion' WHEN 17 THEN 'Himachal'
+        WHEN 18 THEN 'Diaspora' WHEN 19 THEN 'Environment' WHEN 20 THEN 'National' WHEN 21 THEN 'Punjab'
+        WHEN 22 THEN 'Crime & Law' WHEN 24 THEN 'Travel' WHEN 25 THEN 'Films & TV' WHEN 26 THEN 'Life Style'
+        WHEN 30 THEN 'Delhi NCR' WHEN 31 THEN 'Uttar Pradesh' WHEN 32 THEN 'Jammu & Kashmir' WHEN 33 THEN 'Uttarakhand'
+        ELSE c.acgr_name
+      END as category_name,
+      CASE a.cgry_code
+        WHEN 6 THEN 'business' WHEN 7 THEN 'haryana' WHEN 8 THEN 'political' WHEN 9 THEN 'human-interest'
+        WHEN 10 THEN 'chandigarh' WHEN 11 THEN 'global-news' WHEN 12 THEN 'health' WHEN 13 THEN 'technology'
+        WHEN 14 THEN 'sports' WHEN 15 THEN 'education' WHEN 16 THEN 'opinion' WHEN 17 THEN 'himachal'
+        WHEN 18 THEN 'diaspora' WHEN 19 THEN 'environment' WHEN 20 THEN 'national' WHEN 21 THEN 'punjab'
+        WHEN 22 THEN 'crime-law' WHEN 24 THEN 'travel' WHEN 25 THEN 'films-tv' WHEN 26 THEN 'life-style'
+        WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'uttarakhand'
+        ELSE oc.cgry_url
+      END as category_url 
+     FROM ox_article a
+     LEFT JOIN ox_acategory c ON a.cgry_code = c.acgr_code
+     LEFT JOIN ox_code oc ON a.cgry_code = oc.cgry_code
+     WHERE a.active = 2 
+       AND string_to_array(a.group_list, ',') @> ARRAY['58']
+       AND a.date >= NOW() - INTERVAL '5 days'
+     ORDER BY a.date DESC 
+     LIMIT $1`,
+    [limit]
+  )
+})
+
+export const getPopularArticles = cache(async (limit = 4, days = 90): Promise<Article[]> => {
+  return query<Article>(
+    `SELECT a.*, 
+      CASE a.cgry_code
+        WHEN 6 THEN 'Business' WHEN 7 THEN 'Haryana' WHEN 8 THEN 'Political' WHEN 9 THEN 'Human Interest'
+        WHEN 10 THEN 'Chandigarh' WHEN 11 THEN 'Global News' WHEN 12 THEN 'Health' WHEN 13 THEN 'Technology'
+        WHEN 14 THEN 'Sports' WHEN 15 THEN 'Education' WHEN 16 THEN 'Opinion' WHEN 17 THEN 'Himachal'
+        WHEN 18 THEN 'Diaspora' WHEN 19 THEN 'Environment' WHEN 20 THEN 'National' WHEN 21 THEN 'Punjab'
+        WHEN 22 THEN 'Crime & Law' WHEN 24 THEN 'Travel' WHEN 25 THEN 'Films & TV' WHEN 26 THEN 'Life Style'
+        WHEN 30 THEN 'Delhi NCR' WHEN 31 THEN 'Uttar Pradesh' WHEN 32 THEN 'Jammu & Kashmir' WHEN 33 THEN 'Uttarakhand'
+        ELSE c.acgr_name
+      END as category_name,
+      CASE a.cgry_code
+        WHEN 6 THEN 'business' WHEN 7 THEN 'haryana' WHEN 8 THEN 'political' WHEN 9 THEN 'human-interest'
+        WHEN 10 THEN 'chandigarh' WHEN 11 THEN 'global-news' WHEN 12 THEN 'health' WHEN 13 THEN 'technology'
+        WHEN 14 THEN 'sports' WHEN 15 THEN 'education' WHEN 16 THEN 'opinion' WHEN 17 THEN 'himachal'
+        WHEN 18 THEN 'diaspora' WHEN 19 THEN 'environment' WHEN 20 THEN 'national' WHEN 21 THEN 'punjab'
+        WHEN 22 THEN 'crime-law' WHEN 24 THEN 'travel' WHEN 25 THEN 'films-tv' WHEN 26 THEN 'life-style'
+        WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'uttarakhand'
+        ELSE oc.cgry_url
+      END as category_url 
+     FROM ox_article a
+     LEFT JOIN ox_acategory c ON a.cgry_code = c.acgr_code
+     LEFT JOIN ox_code oc ON a.cgry_code = oc.cgry_code
+     WHERE a.active = 2 
+       AND a.date >= NOW() - ($2 * INTERVAL '1 day')
+     ORDER BY COALESCE(a.hits, 0) DESC, a.date DESC
+     LIMIT $1`,
+    [limit, days]
+  )
+})
+
+
+
 export const getLatestArticles = cache(async (
   page = 1,
   limit = 20,
@@ -323,7 +400,7 @@ export const getLatestArticles = cache(async (
   let params: any[] = [limit, offset]
   
   if (sgmtCode !== undefined) {
-    whereClause += ' AND a.sgmt_code = $3'
+    whereClause += ' AND (a.sgmt_code = $3 OR string_to_array(a.sgmt_list, \',\') @> ARRAY[$3::text])'
     params.push(sgmtCode)
   }
 
@@ -589,23 +666,27 @@ export const getCompanyByPermalink = cache(async (slug: string): Promise<Company
 
 // ── Categories ─────────────────────────────────────────────────────────────
 
-export const getAllCategories = cache(async (): Promise<Category[]> => {
-  return query<Category>(
-    `SELECT c.acgr_code as cgry_code, c.acgr_name as cgry_name,
-      CASE c.acgr_code
-        WHEN 6 THEN 'business' WHEN 7 THEN 'haryana' WHEN 8 THEN 'political' WHEN 9 THEN 'human-interest'
-        WHEN 10 THEN 'chandigarh' WHEN 11 THEN 'global-news' WHEN 12 THEN 'health' WHEN 13 THEN 'technology'
-        WHEN 14 THEN 'sports' WHEN 15 THEN 'education' WHEN 16 THEN 'opinion' WHEN 17 THEN 'himachal'
-        WHEN 18 THEN 'diaspora' WHEN 19 THEN 'environment' WHEN 20 THEN 'national' WHEN 21 THEN 'punjab'
-        WHEN 22 THEN 'crime-law' WHEN 24 THEN 'travel' WHEN 25 THEN 'films-tv' WHEN 26 THEN 'life-style'
-        WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'uttarakhand'
-        ELSE oc.cgry_url
-      END as cgry_url 
-     FROM ox_acategory c
-     LEFT JOIN ox_code oc ON c.acgr_code = oc.cgry_code
-     WHERE c.active = 2 ORDER BY c.acgr_code`
-  )
-})
+export const getAllCategories = unstable_cache(
+  async (): Promise<Category[]> => {
+    return query<Category>(
+      `SELECT c.acgr_code as cgry_code, c.acgr_name as cgry_name,
+        CASE c.acgr_code
+          WHEN 6 THEN 'business' WHEN 7 THEN 'haryana' WHEN 8 THEN 'political' WHEN 9 THEN 'human-interest'
+          WHEN 10 THEN 'chandigarh' WHEN 11 THEN 'global-news' WHEN 12 THEN 'health' WHEN 13 THEN 'technology'
+          WHEN 14 THEN 'sports' WHEN 15 THEN 'education' WHEN 16 THEN 'opinion' WHEN 17 THEN 'himachal'
+          WHEN 18 THEN 'diaspora' WHEN 19 THEN 'environment' WHEN 20 THEN 'national' WHEN 21 THEN 'punjab'
+          WHEN 22 THEN 'crime-law' WHEN 24 THEN 'travel' WHEN 25 THEN 'films-tv' WHEN 26 THEN 'life-style'
+          WHEN 30 THEN 'delhi-ncr' WHEN 31 THEN 'uttar-pradesh' WHEN 32 THEN 'jammu-kashmir' WHEN 33 THEN 'uttarakhand'
+          ELSE oc.cgry_url
+        END as cgry_url 
+       FROM ox_acategory c
+       LEFT JOIN ox_code oc ON c.acgr_code = oc.cgry_code
+       WHERE c.active = 2 ORDER BY c.acgr_code`
+    )
+  },
+  ['all-categories'],
+  { revalidate: 3600, tags: ['categories'] }
+)
 
 export const getCategoryByUrl = cache(async (url: string): Promise<Category | null> => {
   return queryOne<Category>(
@@ -637,12 +718,18 @@ export const getCategoryByUrl = cache(async (url: string): Promise<Category | nu
   )
 })
 
-export const getActiveCategoryCodes = cache(async (): Promise<number[]> => {
-  const rows = await query<{ cgry_code: number }>(
-    `SELECT DISTINCT cgry_code FROM ox_article WHERE active = 2`
-  )
-  return rows.map(r => r.cgry_code)
-})
+import { unstable_cache } from 'next/cache'
+
+export const getActiveCategoryCodes = unstable_cache(
+  async (): Promise<number[]> => {
+    const rows = await query<{ cgry_code: number }>(
+      `SELECT DISTINCT cgry_code FROM ox_article WHERE active = 2`
+    )
+    return rows.map(r => r.cgry_code)
+  },
+  ['active-category-codes'],
+  { revalidate: 3600, tags: ['categories'] }
+)
 
 // ── Site settings ──────────────────────────────────────────────────────────
 

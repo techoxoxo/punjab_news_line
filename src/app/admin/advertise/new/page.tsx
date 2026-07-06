@@ -28,7 +28,10 @@ export default function NewAdvertisePage() {
     advt_body: 'everywhere|top',
     permalink: '',
     active: 2,
-    placement: 'sidebar_top'
+    placement: 'sidebar_top',
+    geo_enabled: false,
+    start_date: '',
+    end_date: ''
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isManualPermalink, setIsManualPermalink] = useState(false)
@@ -266,6 +269,64 @@ export default function NewAdvertisePage() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Geo-Fencing Compliance */}
+          <div className="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm p-12 space-y-8">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-50">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center">
+                  <Globe className="h-5 w-5 text-blue-500" />
+                </div>
+                <div>
+                  <h3 className="font-black text-slate-900 uppercase text-xs tracking-widest">Geo-Fencing Compliance</h3>
+                  <p className="text-[10px] text-slate-400 font-medium">Restrict visibility to compliant regions</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setFormData({ ...formData, geo_enabled: !formData.geo_enabled })}
+                className={`h-7 w-12 rounded-full flex items-center transition-all duration-300 ${
+                  formData.geo_enabled ? 'bg-emerald-500 justify-end' : 'bg-slate-200 justify-start'
+                } p-1`}
+              >
+                <div className="h-5 w-5 rounded-full bg-white shadow flex items-center justify-center">
+                  {formData.geo_enabled && <CheckCircle2 className="h-3 w-3 text-emerald-500" />}
+                </div>
+              </button>
+            </div>
+
+            {formData.geo_enabled && (
+              <div className="space-y-6 animate-fadeIn">
+                <div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 flex gap-3">
+                  <AlertCircle className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
+                  <p className="text-blue-700 text-xs font-medium leading-relaxed">
+                    This campaign will only be visible to users inside the active regions (Punjab state/districts) toggled in the <strong>Region Settings</strong>. Users outside these regions will not see the ad.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Start Date (Optional)</label>
+                    <input
+                      type="date"
+                      value={formData.start_date}
+                      onChange={e => setFormData({ ...formData, start_date: e.target.value })}
+                      className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-700 outline-none focus:border-brand focus:ring-4 focus:ring-brand/5 transition-all shadow-inner"
+                    />
+                  </div>
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">End Date (Optional)</label>
+                    <input
+                      type="date"
+                      value={formData.end_date}
+                      onChange={e => setFormData({ ...formData, end_date: e.target.value })}
+                      className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 text-sm font-bold text-slate-700 outline-none focus:border-brand focus:ring-4 focus:ring-brand/5 transition-all shadow-inner"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 

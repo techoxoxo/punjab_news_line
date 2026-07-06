@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Manrope, Noto_Sans_Gurmukhi } from 'next/font/google'
 import './globals.css'
 import { SiteChrome } from '@/components/public/site-chrome'
@@ -17,6 +17,12 @@ const bodyFont = Noto_Sans_Gurmukhi({
   variable: '--font-body',
   display: 'swap',
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -51,11 +57,17 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: { canonical: SITE_URL },
+  alternates: { 
+    languages: {
+      'en-IN': '/en',
+      'hi-IN': '/hi',
+      'pa-IN': '/pa',
+    }
+  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    apple: '/images/basic/icon.png',
   },
 }
 
@@ -65,12 +77,31 @@ import { GoogleAdSense } from '@/components/public/google-adsense'
 import { Toaster } from 'sonner'
 import { getActiveCategoryCodes } from '@/lib/queries'
 
+import Script from 'next/script'
+
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const activeCategoryCodes = await getActiveCategoryCodes()
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-35WP2WQDDD'
   
   return (
     <html lang="pa" className={`${uiFont.variable} ${bodyFont.variable}`} suppressHydrationWarning>
       <body className="min-h-screen bg-[var(--background)] text-[var(--foreground)] antialiased">
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <GoogleAnalytics />
         <GoogleAdSense />
         <Toaster position="top-right" richColors />

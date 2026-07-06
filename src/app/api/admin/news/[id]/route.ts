@@ -53,8 +53,9 @@ export async function PATCH(
         lang_code = $16,
         team_code = $17,
         sgmt_code = $18,
-        mode_code = $19
-      WHERE article_code = $20`,
+        mode_code = $19,
+        sgmt_list = $20
+      WHERE article_code = $21`,
       [
         data.article_head,
         data.article_desc,
@@ -75,6 +76,7 @@ export async function PATCH(
         data.team_code || 2,
         data.sgmt_code || 17,
         data.mode_code || 27,
+        data.sgmt_list || '',
         parseInt(id)
       ]
     )

@@ -52,6 +52,11 @@ export function getYoutubeThumb(url: string | null | undefined): string | null {
   return `https://img.youtube.com/vi/${id}/hqdefault.jpg`
 }
 
-export function advtImageUrl(advtCode: number): string {
-  return `/r2-images/ads/full${advtCode}.jpg`
+export function advtImageUrl(advtCode: number, timestamp?: Date | string | null | number): string {
+  const url = `/r2-images/ads/full${advtCode}.jpg`
+  if (timestamp) {
+    const t = timestamp instanceof Date ? timestamp.getTime() : timestamp
+    return `${url}?v=${t}`
+  }
+  return url
 }

@@ -29,6 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const canonical = `${process.env.NEXT_PUBLIC_SITE_URL}/video-gallery/${video.permalink}`
   const locale = LANG_CODE_MAP[video.lang_code ?? 1]
 
+  const imageUrl = video.vlink ? `https://img.youtube.com/vi/${getYoutubeId(video.vlink)}/hqdefault.jpg` : logoUrl()
+
   return {
     title,
     description,
@@ -37,8 +39,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical,
       languages: locale ? { [locale]: canonical } : undefined,
     },
-    openGraph: { title, description, type: 'video.other' },
-    twitter: { card: 'summary_large_image', title, description },
+    openGraph: { 
+      title, 
+      description, 
+      type: 'video.other',
+      images: [{ url: imageUrl, width: 1200, height: 630 }]
+    },
+    twitter: { 
+      card: 'summary_large_image', 
+      title, 
+      description,
+      images: [imageUrl]
+    },
   }
 }
 

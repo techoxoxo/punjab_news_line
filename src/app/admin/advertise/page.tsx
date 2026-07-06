@@ -5,17 +5,15 @@ import {
   Plus, 
   Search,
   Filter,
-  MoreHorizontal,
   Edit,
-  Trash2,
   Eye,
   Megaphone,
   CheckCircle2,
   AlertCircle,
-  Calendar,
   ExternalLink,
   Globe,
-  Layout
+  Layout,
+  MapPin
 } from 'lucide-react'
 import { FallbackImage } from '@/components/public/fallback-image'
 import { advtImageUrl } from '@/lib/image'
@@ -25,7 +23,7 @@ async function getAdvertisements() {
   // We'll try to fetch common fields, using COALESCE or CASE if needed for safety
   try {
     const result = await query(`
-      SELECT advt_code, advt_head, permalink, active, advt_body 
+      SELECT advt_code, advt_head, permalink, active, advt_body, updated_at, geo_enabled, start_date, end_date
       FROM ox_advt 
       ORDER BY advt_code DESC
     `)
@@ -46,13 +44,22 @@ export default async function AdminAdvertisePage() {
           <h2 className="text-3xl font-black text-slate-900 tracking-tight">Advertisement Center</h2>
           <p className="text-slate-500 font-medium mt-1">Manage your campaigns, banners, and promotional content</p>
         </div>
-        <Link 
-          href="/admin/advertise/new" 
-          className="bg-brand text-white px-6 py-3 rounded-2xl font-black text-sm flex items-center gap-3 shadow-lg shadow-brand/20 hover:scale-105 active:scale-95 transition-all"
-        >
-          <Plus className="h-5 w-5" />
-          Create New Campaign
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link 
+            href="/admin/advertise/geo-report"
+            className="flex items-center gap-2 px-5 py-3 rounded-2xl bg-white border border-emerald-200 text-emerald-700 font-black text-xs uppercase tracking-widest hover:bg-emerald-50 transition-all shadow-sm"
+          >
+            <MapPin className="h-4 w-4" />
+            Geo Report
+          </Link>
+          <Link 
+            href="/admin/advertise/new" 
+            className="bg-brand text-white px-6 py-3 rounded-2xl font-black text-sm flex items-center gap-3 shadow-lg shadow-brand/20 hover:scale-105 active:scale-95 transition-all"
+          >
+            <Plus className="h-5 w-5" />
+            Create New Campaign
+          </Link>
+        </div>
       </div>
 
       <div className="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm overflow-hidden">
@@ -118,7 +125,7 @@ export default async function AdminAdvertisePage() {
                       <div className="flex items-center gap-6">
                         <div className="h-14 w-24 rounded-xl bg-slate-100 overflow-hidden relative shrink-0 border border-slate-200">
                           <FallbackImage 
-                            src={advtImageUrl(ad.advt_code)} 
+                            src={advtImageUrl(ad.advt_code, ad.updated_at)} 
                             alt={ad.advt_head || 'Advertisement'} 
                             fill 
                             unoptimized
@@ -127,12 +134,27 @@ export default async function AdminAdvertisePage() {
                           />
                         </div>
                         <div className="flex flex-col">
-                          <h4 className="font-bold text-slate-900 group-hover:text-brand transition-colors text-base">{ad.advt_head}</h4>
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <h4 className="font-bold text-slate-900 group-hover:text-brand transition-colors text-base">{ad.advt_head}</h4>
+                            {ad.geo_enabled && (
+                              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-blue-50 text-blue-600 border border-blue-100 text-[9px] font-black uppercase tracking-wider">
+                                <MapPin className="h-2 w-2" />
+                                Geo-Fenced
+                              </span>
+                            )}
+                          </div>
                           <div className="flex items-center gap-3 mt-1.5">
                             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter flex items-center gap-1">
                                <ExternalLink className="h-3 w-3" />
                                /{ad.permalink}
                             </p>
+                            {(ad.start_date || ad.end_date) && (
+                              <p className="text-[9px] font-semibold text-slate-400">
+                                {ad.start_date ? new Date(ad.start_date).toLocaleDateString() : 'Start'}
+                                {' - '}
+                                {ad.end_date ? new Date(ad.end_date).toLocaleDateString() : 'End'}
+                              </p>
+                            )}
                           </div>
                         </div>
                       </div>

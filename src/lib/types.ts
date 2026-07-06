@@ -24,6 +24,7 @@ export interface Article {
   subhead: string | null
   cgry_list: string | null
   group_list: string | null
+  sgmt_list?: string | null
   progress: boolean | null
   hits: number
   active: number
@@ -126,6 +127,11 @@ export interface Advertisement {
   advt_body: string | null
   advt_image?: string | null
   active: number
+  updated_at?: Date | null
+  geo_enabled?: boolean
+  geo_regions?: string
+  start_date?: string | null
+  end_date?: string | null
 }
 
 export interface Company {

@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'
 import { NewsletterForm } from './newsletter-form'
 
 const navItems = [
+  { href: '/top-news', label: 'Trending', code: 999 },
   { href: '/category/national', label: 'National', code: 20 },
   { href: '/category/punjab', label: 'Punjab', code: 21 },
   { href: '/category/haryana', label: 'Haryana', code: 7 },
@@ -31,10 +32,10 @@ function OtherStatesDropdown({ items, isSticky = false }: { items: typeof navIte
   return (
     <div className="relative group shrink-0">
       <button className={`
-        flex items-center gap-1.5 shrink-0 rounded-full font-bold uppercase tracking-widest transition-all
+        flex items-center gap-1.5 shrink-0 rounded-full font-bold uppercase transition-all
         ${isSticky 
-          ? 'px-3 py-1.5 text-[10px] text-slate-600 hover:text-brand' 
-          : 'px-5 py-2.5 text-xs text-slate-600 hover:bg-slate-100 hover:text-brand'
+          ? 'px-2.5 xl:px-3 py-1.5 text-[10px] text-slate-600 hover:text-brand' 
+          : 'px-2.5 xl:px-4 py-2 text-[11px] xl:text-xs tracking-wider text-slate-600 hover:bg-slate-100 hover:text-brand'
         }
       `}>
         Other States
@@ -83,8 +84,21 @@ export function SiteChrome({
 }) {
   const [showStickyNav, setShowStickyNav] = React.useState(false)
   const [lastScrollY, setLastScrollY] = React.useState(0)
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const pathname = usePathname()
   const isAdmin = pathname?.startsWith('/admin')
+
+  // Lock body scroll when mobile menu is open
+  React.useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
 
   const filteredNavItems = React.useMemo(() => {
     return navItems.filter(item => {
@@ -188,35 +202,7 @@ export function SiteChrome({
           </div>
         </div>
 
-        {/* Regular Navigation - Not Sticky */}
-        <nav className="relative z-30 border-t border-slate-100 bg-white" aria-label="Primary Navigation">
-          <div className="mx-auto max-w-8xl px-4 lg:px-8">
-            <div className="flex items-center justify-start gap-1 overflow-x-auto md:overflow-visible py-2 scrollbar-hide md:gap-3 no-scrollbar">
-              <div className="flex items-center gap-1 md:mx-auto md:w-fit">
-                <Link href="/" className="shrink-0 rounded-full bg-brand/5 px-5 py-2.5 text-xs font-black uppercase tracking-widest text-brand transition-all hover:bg-brand hover:text-white">Home</Link>
-                {mainPrimaryItems.map((item) => (
-                  <React.Fragment key={item.href}>
-                    <Link 
-                      href={item.href} 
-                      className="shrink-0 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-slate-600 transition-all hover:bg-slate-100 hover:text-brand"
-                    >
-                      {item.label}
-                    </Link>
-                    {item.code === 10 && otherStatesItems.length > 0 && (
-                      <OtherStatesDropdown items={otherStatesItems} />
-                    )}
-                  </React.Fragment>
-                ))}
-                <div className="mx-3 h-5 w-[1px] bg-slate-200 shrink-0" />
-                <Link href="/video-gallery" className="shrink-0 rounded-full bg-brand-blue/5 px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-blue transition-all hover:bg-brand-blue hover:text-white">Videos</Link>
-                <Link href="/photo-gallery" className="shrink-0 rounded-full bg-brand-blue/5 px-5 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-blue transition-all hover:bg-brand-blue hover:text-white">Photos</Link>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      {/* Sticky Navigation - Shows only when scrolling up */}
+        {/* Sticky Navigation - Shows only when scrolling up */}
       <nav 
         className={`fixed top-0 left-0 right-0 z-[100] border-b border-slate-100 bg-white/95 backdrop-blur-md shadow-md transition-all duration-500 ease-in-out ${showStickyNav ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`} 
         aria-label="Sticky Navigation"
@@ -228,35 +214,89 @@ export function SiteChrome({
                <FallbackImage src={logoUrl()} alt="Logo" width={140} height={35} className="h-8 w-auto object-contain" />
              </Link>
              
-             <div className="flex items-center gap-1 md:gap-2">
-               <div className="flex items-center gap-1 md:mx-auto">
-                {mainPrimaryItems.map((item) => (
-                  <React.Fragment key={item.href}>
-                    <Link 
-                      href={item.href} 
-                      className="shrink-0 rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-all hover:text-brand"
-                    >
-                      {item.label}
-                    </Link>
-                    {item.code === 10 && otherStatesItems.length > 0 && (
-                      <OtherStatesDropdown items={otherStatesItems} isSticky />
-                    )}
-                  </React.Fragment>
-                ))}
-               </div>
-            </div>
+             {/* Desktop Navigation */}
+             <div className="hidden xl:flex items-center gap-1 xl:gap-2">
+               {mainPrimaryItems.map((item) => (
+                 <React.Fragment key={item.href}>
+                   <Link 
+                     href={item.href} 
+                     className="shrink-0 rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-600 transition-all hover:text-brand"
+                   >
+                     {item.label}
+                   </Link>
+                   {item.code === 10 && otherStatesItems.length > 0 && (
+                     <OtherStatesDropdown items={otherStatesItems} isSticky />
+                   )}
+                 </React.Fragment>
+               ))}
+             </div>
 
-            <div className="flex items-center gap-4">
-              <button className="text-slate-400 hover:text-brand">
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+             <div className="flex items-center gap-2">
+               {/* Search Button */}
+               <Link 
+                 href="/search" 
+                 className="text-slate-400 hover:text-brand p-2 rounded-full hover:bg-slate-50 transition-all"
+                 aria-label="Search"
+               >
+                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                 </svg>
+               </Link>
+
+               {/* Mobile Menu Hamburger Button */}
+               <button 
+                 type="button"
+                 onClick={() => setMobileMenuOpen(true)}
+                 className="xl:hidden text-slate-400 hover:text-brand p-2 rounded-full hover:bg-slate-50 transition-all"
+                 aria-label="Open Mobile Menu"
+               >
+                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                 </svg>
+               </button>
+             </div>
+          </div>
+        </div>
+      </nav>
+      </header>
+
+      {/* Regular Navigation - Fixed on mobile, normal flow on desktop */}
+      <nav className="fixed top-0 left-0 right-0 z-30 border-t border-b border-slate-100 bg-white shadow-sm lg:relative lg:shadow-none" aria-label="Primary Navigation">
+        <div className="mx-auto max-w-8xl px-4 lg:px-8 w-full overflow-hidden">
+          <div className="w-full overflow-x-auto xl:overflow-visible py-2 scrollbar-hide no-scrollbar">
+            <div className="flex items-center gap-1 xl:mx-auto xl:w-fit min-w-max">
+              {/* Mobile Menu Toggle Button */}
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(true)}
+                className="xl:hidden shrink-0 rounded-full bg-slate-50 border border-slate-100 p-2.5 text-slate-500 hover:bg-brand hover:text-white hover:border-brand transition-all mr-1.5 shadow-sm"
+                aria-label="Open Mobile Menu"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
+              <Link href="/" className="shrink-0 rounded-full bg-brand/5 px-2.5 xl:px-4 py-2 text-[11px] xl:text-xs font-black uppercase tracking-wider text-brand transition-all hover:bg-brand hover:text-white">Home</Link>
+              {mainPrimaryItems.map((item) => (
+                <React.Fragment key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="shrink-0 rounded-full px-2.5 xl:px-4 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-slate-600 transition-all hover:bg-slate-100 hover:text-brand"
+                  >
+                    {item.label}
+                  </Link>
+                  {item.code === 10 && otherStatesItems.length > 0 && (
+                    <OtherStatesDropdown items={otherStatesItems} />
+                  )}
+                </React.Fragment>
+              ))}
+              <div className="mx-3 h-5 w-[1px] bg-slate-200 shrink-0" />
+              <Link href="/video-gallery" className="shrink-0 rounded-full bg-brand-blue/5 px-2.5 xl:px-4 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-brand-blue transition-all hover:bg-brand-blue hover:text-white">Videos</Link>
+              <Link href="/photo-gallery" className="shrink-0 rounded-full bg-brand-blue/5 px-2.5 xl:px-4 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider text-brand-blue transition-all hover:bg-brand-blue hover:text-white">Photos</Link>
             </div>
           </div>
         </div>
       </nav>
-
       <div className="border-b border-slate-100 bg-slate-50/50 py-2.5">
         <div className="mx-auto max-w-8xl px-6 lg:px-10">
           <div className="flex items-center gap-6">
@@ -362,6 +402,97 @@ export function SiteChrome({
           </div>
         </div>
       </footer>
+      {/* Mobile Menu Drawer Overlay */}
+      {mobileMenuOpen && (
+        <div 
+          className="fixed inset-0 z-[150] bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300" 
+          onClick={() => setMobileMenuOpen(false)} 
+        />
+      )}
+
+      {/* Mobile Menu Drawer Container */}
+      <div className={`fixed inset-y-0 left-0 z-[160] w-full max-w-xs bg-white/98 backdrop-blur-xl shadow-2xl border-r border-slate-100 p-6 flex flex-col justify-between transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full invisible'}`}>
+        <div>
+          {/* Drawer Header */}
+          <div className="flex items-center justify-between pb-6 border-b border-slate-100">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+              <FallbackImage src={logoUrl()} alt="Logo" width={140} height={35} className="h-8 w-auto object-contain" />
+            </Link>
+            <button 
+              type="button"
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-2 rounded-full bg-slate-50 border border-slate-100 text-slate-500 hover:bg-brand hover:text-white hover:border-brand transition-all"
+              aria-label="Close Menu"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Drawer Navigation List */}
+          <nav className="mt-8 space-y-2 overflow-y-auto max-h-[65vh] pr-2 scrollbar-thin">
+            <span className="block text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4 px-2">Navigation Categories</span>
+            <Link 
+              href="/" 
+              onClick={() => setMobileMenuOpen(false)}
+              className="block rounded-xl px-4 py-3 text-xs font-black uppercase tracking-widest text-brand bg-brand/5 hover:bg-brand hover:text-white transition-all"
+            >
+              Home
+            </Link>
+            {mainPrimaryItems.map((item) => (
+              <Link 
+                key={item.href}
+                href={item.href} 
+                onClick={() => setMobileMenuOpen(false)}
+                className="block rounded-xl px-4 py-3 text-xs font-bold uppercase tracking-widest text-slate-600 hover:bg-slate-50 hover:text-brand transition-all"
+              >
+                {item.label}
+              </Link>
+            ))}
+            
+            {/* Other States Sub-list */}
+            {otherStatesItems.length > 0 && (
+              <div className="pt-4 border-t border-slate-50 mt-4">
+                <span className="block text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 mb-3 px-2">Regional Portals</span>
+                {otherStatesItems.map((item) => (
+                  <Link 
+                    key={item.href}
+                    href={item.href} 
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-xl px-4 py-2.5 text-[11px] font-bold uppercase tracking-widest text-slate-500 hover:bg-slate-50 hover:text-brand transition-all pl-6"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {/* Extra pages */}
+            <div className="pt-4 border-t border-slate-50 mt-4 space-y-1">
+              <Link 
+                href="/video-gallery" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="block rounded-xl px-4 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-blue hover:bg-brand-blue/5 transition-all"
+              >
+                Videos
+              </Link>
+              <Link 
+                href="/photo-gallery" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="block rounded-xl px-4 py-2.5 text-xs font-bold uppercase tracking-widest text-brand-blue hover:bg-brand-blue/5 transition-all"
+              >
+                Photos
+              </Link>
+            </div>
+          </nav>
+        </div>
+
+        {/* Drawer Footer */}
+        <div className="pt-6 border-t border-slate-100 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+          <p>© {new Date().getFullYear()} Punjab Newsline</p>
+        </div>
+      </div>
     </div>
   )
 }
