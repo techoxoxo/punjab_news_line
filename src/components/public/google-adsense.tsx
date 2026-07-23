@@ -2,11 +2,9 @@
 
 import Script from 'next/script'
 
-const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID
+const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-8249733130908714'
 
 export function GoogleAdSense() {
-  if (!ADSENSE_ID) return null
-
   return (
     <Script
       id="adsbygoogle-init"

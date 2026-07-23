@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/images/basic/icon.png',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-8249733130908714',
+  },
 }
 
 import { Providers } from '@/components/providers'
