@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1783226621926,
+  "lastScanned": 1789614242553,
   "projectRoot": "/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline",
   "techStack": {
     "languages": [
@@ -78,7 +78,7 @@
       "path": "audit",
       "purpose": null,
       "fileCount": 6,
-      "lastAccessed": 1783226621897,
+      "lastAccessed": 1789614242539,
       "keyFiles": [
         "all-urls.txt",
         "duplicate-permalinks.txt",
@@ -87,18 +87,11 @@
         "test-redirects.txt"
       ]
     },
-    "deployment": {
-      "path": "deployment",
-      "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1783226621898,
-      "keyFiles": []
-    },
     "migration": {
       "path": "migration",
       "purpose": null,
       "fileCount": 8,
-      "lastAccessed": 1783226621911,
+      "lastAccessed": 1789614242542,
       "keyFiles": [
         "001_schema.sql",
         "002_seo_fields.sql",
@@ -110,8 +103,8 @@
     "public": {
       "path": "public",
       "purpose": "Public files",
-      "fileCount": 8,
-      "lastAccessed": 1783226621911,
+      "fileCount": 9,
+      "lastAccessed": 1789614242543,
       "keyFiles": [
         "ads.txt",
         "favicon.ico",
@@ -124,7 +117,7 @@
       "path": "scratch",
       "purpose": null,
       "fileCount": 16,
-      "lastAccessed": 1783226621912,
+      "lastAccessed": 1789614242543,
       "keyFiles": [
         "check-ads.mjs",
         "check_all_columns.js",
@@ -137,7 +130,7 @@
       "path": "scripts",
       "purpose": "Build/utility scripts",
       "fileCount": 4,
-      "lastAccessed": 1783226621912,
+      "lastAccessed": 1789614242543,
       "keyFiles": [
         "make-build-portable.mjs",
         "permalink-integrity.mjs",
@@ -148,8 +141,8 @@
     "src": {
       "path": "src",
       "purpose": "Source code",
-      "fileCount": 1,
-      "lastAccessed": 1783226621912,
+      "fileCount": 2,
+      "lastAccessed": 1789614242543,
       "keyFiles": [
         "proxy.ts"
       ]
@@ -158,7 +151,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 7,
-      "lastAccessed": 1783226621914,
+      "lastAccessed": 1789614242545,
       "keyFiles": [
         "favicon.ico",
         "globals.css",
@@ -168,8 +161,8 @@
     "src/components": {
       "path": "src/components",
       "purpose": "UI components",
-      "fileCount": 1,
-      "lastAccessed": 1783226621915,
+      "fileCount": 2,
+      "lastAccessed": 1789614242545,
       "keyFiles": [
         "providers.tsx"
       ]
@@ -178,7 +171,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 10,
-      "lastAccessed": 1783226621915,
+      "lastAccessed": 1789614242545,
       "keyFiles": [
         "actions.ts",
         "auth.ts",
@@ -186,49 +179,6 @@
       ]
     }
   },
-  "hotPaths": [
-    {
-      "path": "src/app/page.tsx",
-      "accessCount": 19,
-      "lastAccessed": 1783245909760,
-      "type": "file"
-    },
-    {
-      "path": "src/components/public/site-chrome.tsx",
-      "accessCount": 11,
-      "lastAccessed": 1783228924835,
-      "type": "file"
-    },
-    {
-      "path": "src/app/globals.css",
-      "accessCount": 3,
-      "lastAccessed": 1783228199291,
-      "type": "directory"
-    },
-    {
-      "path": "src/components/public/ad-placement.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1783228220714,
-      "type": "file"
-    },
-    {
-      "path": "src/app/layout.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783227935515,
-      "type": "file"
-    },
-    {
-      "path": "scratch/check-ads.mjs",
-      "accessCount": 1,
-      "lastAccessed": 1783228229443,
-      "type": "file"
-    },
-    {
-      "path": "src/components/public/fallback-image.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1783228307193,
-      "type": "file"
-    }
-  ],
+  "hotPaths": [],
   "userDirectives": []
 }

@@ -19,14 +19,21 @@ setInterval(() => {
 }, 60 * 1000) // clean up every minute
 
 export async function POST(req: NextRequest) {
+  let body: any
   try {
-    const body = await req.json()
-    const articleCode = Number(body?.articleCode)
-    const type = body?.type || 'article'
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ counted: false, reason: 'invalid_json' }, { status: 400 })
+  }
 
-    if (!articleCode || isNaN(articleCode) || articleCode <= 0) {
-      return NextResponse.json({ error: 'Invalid code' }, { status: 400 })
-    }
+  const articleCode = Number(body?.articleCode)
+  const type = body?.type || 'article'
+
+  if (!articleCode || isNaN(articleCode) || articleCode <= 0) {
+    return NextResponse.json({ error: 'Invalid code' }, { status: 400 })
+  }
+
+  try {
 
     // Get real visitor IP
     const ip =

@@ -115,9 +115,16 @@ setInterval(() => {
 
 // ── Handler ───────────────────────────────────────────────────────────────
 export async function POST(req: NextRequest) {
+  let advtCode = 0
+  let body: any
   try {
-    const body = await req.json()
-    const advtCode = Number(body?.advt_code)
+    body = await req.json()
+  } catch {
+    return NextResponse.json({ counted: false, reason: 'invalid_json' }, { status: 400 })
+  }
+
+  try {
+    advtCode = Number(body?.advt_code)
     const pageUrl = String(body?.page_url ?? '').slice(0, 500)
 
     if (!advtCode || isNaN(advtCode) || advtCode <= 0) {
@@ -195,7 +202,11 @@ export async function POST(req: NextRequest) {
     )
 
     return NextResponse.json({ counted: true, in_fence: inFence })
-  } catch (err) {
+  } catch (err: any) {
+    if (err && err.code === '23503') {
+      console.warn(`[ad-impression] foreign key violation: ad code ${advtCode} does not exist in ox_advt (likely deleted).`)
+      return NextResponse.json({ counted: false, reason: 'ad_not_found' }, { status: 404 })
+    }
     console.error('[ad-impression] error:', err)
     return NextResponse.json({ counted: false, reason: 'error' }, { status: 500 })
   }

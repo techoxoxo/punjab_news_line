@@ -76,11 +76,12 @@ export const metadata: Metadata = {
 
 import { Providers } from '@/components/providers'
 import { GoogleAnalytics } from '@/components/public/google-analytics'
-import { GoogleAdSense } from '@/components/public/google-adsense'
 import { Toaster } from 'sonner'
 import { getActiveCategoryCodes } from '@/lib/queries'
 
 import Script from 'next/script'
+
+const ADSENSE_ID = process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-8249733130908714'
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const activeCategoryCodes = await getActiveCategoryCodes()
@@ -105,8 +106,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             `,
           }}
         />
+        <Script
+          id="adsbygoogle-init"
+          strategy="beforeInteractive"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_ID}`}
+          crossOrigin="anonymous"
+        />
         <GoogleAnalytics />
-        <GoogleAdSense />
         <Toaster position="top-right" richColors />
         <Providers>
           <PerfMeasureGuard />
