@@ -179,6 +179,37 @@
       ]
     }
   },
-  "hotPaths": [],
+  "hotPaths": [
+    {
+      "path": "package.json",
+      "accessCount": 3,
+      "lastAccessed": 1789628340816,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/articles/view/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1789627702768,
+      "type": "file"
+    },
+    {
+      "path": "src/components/public/view-tracker.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1789627703184,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/db.ts",
+      "accessCount": 1,
+      "lastAccessed": 1789627734826,
+      "type": "file"
+    },
+    {
+      "path": "scripts/start-standalone.js",
+      "accessCount": 1,
+      "lastAccessed": 1789628335950,
+      "type": "file"
+    }
+  ],
   "userDirectives": []
 }
