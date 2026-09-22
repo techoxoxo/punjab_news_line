@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1789614242553,
+  "lastScanned": 1790056317615,
   "projectRoot": "/Users/macbook/Anuj/Punjab_newsline/next_punjabnewsline",
   "techStack": {
     "languages": [
@@ -49,7 +49,7 @@
     "scripts": {
       "dev": "next dev",
       "build": "next build --webpack && node scripts/make-build-portable.mjs",
-      "start": "next start",
+      "start": "node scripts/start-standalone.js",
       "lint": "eslint",
       "validate:r2-images": "node scripts/validate-r2-images.mjs",
       "verify:urls": "bash scripts/verify-urls.sh",
@@ -78,7 +78,7 @@
       "path": "audit",
       "purpose": null,
       "fileCount": 6,
-      "lastAccessed": 1789614242539,
+      "lastAccessed": 1790056317575,
       "keyFiles": [
         "all-urls.txt",
         "duplicate-permalinks.txt",
@@ -91,7 +91,7 @@
       "path": "migration",
       "purpose": null,
       "fileCount": 8,
-      "lastAccessed": 1789614242542,
+      "lastAccessed": 1790056317576,
       "keyFiles": [
         "001_schema.sql",
         "002_seo_fields.sql",
@@ -104,7 +104,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 9,
-      "lastAccessed": 1789614242543,
+      "lastAccessed": 1790056317588,
       "keyFiles": [
         "ads.txt",
         "favicon.ico",
@@ -117,7 +117,7 @@
       "path": "scratch",
       "purpose": null,
       "fileCount": 16,
-      "lastAccessed": 1789614242543,
+      "lastAccessed": 1790056317589,
       "keyFiles": [
         "check-ads.mjs",
         "check_all_columns.js",
@@ -129,11 +129,12 @@
     "scripts": {
       "path": "scripts",
       "purpose": "Build/utility scripts",
-      "fileCount": 4,
-      "lastAccessed": 1789614242543,
+      "fileCount": 5,
+      "lastAccessed": 1790056317590,
       "keyFiles": [
         "make-build-portable.mjs",
         "permalink-integrity.mjs",
+        "start-standalone.js",
         "validate-r2-images.mjs",
         "verify-urls.sh"
       ]
@@ -142,7 +143,7 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 2,
-      "lastAccessed": 1789614242543,
+      "lastAccessed": 1790056317590,
       "keyFiles": [
         "proxy.ts"
       ]
@@ -151,7 +152,7 @@
       "path": "src/app",
       "purpose": "Application code",
       "fileCount": 7,
-      "lastAccessed": 1789614242545,
+      "lastAccessed": 1790056317593,
       "keyFiles": [
         "favicon.ico",
         "globals.css",
@@ -162,7 +163,7 @@
       "path": "src/components",
       "purpose": "UI components",
       "fileCount": 2,
-      "lastAccessed": 1789614242545,
+      "lastAccessed": 1790056317594,
       "keyFiles": [
         "providers.tsx"
       ]
@@ -171,7 +172,7 @@
       "path": "src/lib",
       "purpose": "Library code",
       "fileCount": 10,
-      "lastAccessed": 1789614242545,
+      "lastAccessed": 1790056317595,
       "keyFiles": [
         "actions.ts",
         "auth.ts",
@@ -208,6 +209,30 @@
       "path": "scripts/start-standalone.js",
       "accessCount": 1,
       "lastAccessed": 1789628335950,
+      "type": "file"
+    },
+    {
+      "path": "src/lib/auth.ts",
+      "accessCount": 1,
+      "lastAccessed": 1790056379953,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/admin/galleries/[id]/photos/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1790056527175,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/admin/videos/[id]/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1790056527732,
+      "type": "file"
+    },
+    {
+      "path": "src/app/api/admin/advertise/route.ts",
+      "accessCount": 1,
+      "lastAccessed": 1790056528232,
       "type": "file"
     }
   ],

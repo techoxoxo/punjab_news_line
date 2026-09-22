@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"curl -s -o /dev/null -w \\\"punjabnewsline.com: %{http_code} (connect:%{time_connect}s total:%{time_total}s)\\\\n\\\" --connect-timeout 8 -m 15 https://punjabnewsline.com/ 2>&1\\ncurl -s -o /dev/...",
+  "error": "Exit code 28\npunjabnewsline.com: 000 (connect:0.000000s total:8.004401s)\npnl_prod_25_jul: 000",
+  "timestamp": "2026-09-22T05:56:11.629Z",
+  "retry_count": 2
+}
