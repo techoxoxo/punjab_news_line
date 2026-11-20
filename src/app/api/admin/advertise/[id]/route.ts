@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { query } from '@/lib/db'
+import { S3Client, DeleteObjectCommand } from '@aws-sdk/client-s3'
 
 export async function GET(
   req: Request,
@@ -45,6 +46,7 @@ export async function PUT(
     revalidatePath('/news/[slug]', 'page')
     revalidatePath('/category/[slug]', 'page')
     revalidatePath('/advertisement')
+    revalidatePath('/admin/advertise')
     revalidatePath(`/advertisement/${permalink}`)
 
     return NextResponse.json({ success: true })
@@ -60,12 +62,30 @@ export async function DELETE(
   try {
     const { id } = await params
     await query(`DELETE FROM ox_advt WHERE advt_code = $1`, [parseInt(id)])
+
+    // Remove the banner so a future ad reusing this code can't show the old image
+    if (process.env.R2_ACCOUNT_ID && process.env.R2_ACCESS_KEY_ID && process.env.R2_SECRET_ACCESS_KEY && process.env.R2_BUCKET) {
+      try {
+        const s3 = new S3Client({
+          region: 'auto',
+          endpoint: `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+          credentials: {
+            accessKeyId: process.env.R2_ACCESS_KEY_ID,
+            secretAccessKey: process.env.R2_SECRET_ACCESS_KEY,
+          },
+        })
+        await s3.send(new DeleteObjectCommand({ Bucket: process.env.R2_BUCKET, Key: `images/ads/full${parseInt(id)}.jpg` }))
+      } catch (e) {
+        console.error('Failed to delete ad image from R2:', e)
+      }
+    }
     
     const { revalidatePath } = await import('next/cache')
     revalidatePath('/')
     revalidatePath('/news/[slug]', 'page')
     revalidatePath('/category/[slug]', 'page')
     revalidatePath('/advertisement')
+    revalidatePath('/admin/advertise')
     
     return NextResponse.json({ success: true })
   } catch (error: any) {
@@ -86,6 +106,7 @@ export async function PATCH(
     revalidatePath('/news/[slug]', 'page')
     revalidatePath('/category/[slug]', 'page')
     revalidatePath('/advertisement')
+    revalidatePath('/admin/advertise')
     
     return NextResponse.json({ success: true })
   } catch (error: any) {

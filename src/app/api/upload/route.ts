@@ -62,6 +62,7 @@ export async function POST(request: NextRequest) {
           Key: key,
           Body: finalBuffer,
           ContentType: 'image/jpeg',
+          CacheControl: 'no-cache, must-revalidate',
         })
       )
       console.log('Upload successful:', key)
