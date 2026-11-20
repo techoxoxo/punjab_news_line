@@ -18,12 +18,26 @@
 /out/
 /.claude/
 
+# AI tooling state (oh-my-claudecode, code-review-graph)
+/.omc/
+/.code-review-graph/
+
 # production
 /build
 
 # misc
 .DS_Store
 *.pem
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# local scratch / test artifacts
+/scratch/
+/test-upload.js
+/test*.jpg
 
 # debug
 npm-debug.log*
@@ -33,6 +47,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
