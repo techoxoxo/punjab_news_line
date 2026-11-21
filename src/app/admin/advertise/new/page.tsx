@@ -114,17 +114,15 @@ export default function NewAdvertisePage() {
 
         if (selectedFile && advtCode) {
           try {
-            // 2. Upload the image and get the URL
+            // 2. Upload the banner, then bump updated_at (cache-busting ?v=) and revalidate pages
             await uploadAdImage(advtCode, selectedFile)
-            // Bump updated_at (cache-busting ?v=) and revalidate pages now that the image exists
             await fetch(`/api/admin/advertise/${advtCode}`, { method: 'PATCH' })
-            
-            // 3. Update the campaign record if needed (currently not needed for image since it follows ID convention)
-            // But we keep the call if we want to update other fields, though POST already did that.
-            // Actually, we can skip the PUT if only the image changed and it's already on R2 via the ID.
           } catch (uploadError) {
-            console.error('Upload failed but campaign created:', uploadError)
-            toast.warning('Campaign created but banner upload failed. Please try editing to upload again.')
+            // Roll back so no live campaign is left showing a missing banner / the logo fallback
+            console.error('Banner upload failed, rolling back campaign:', uploadError)
+            await fetch(`/api/admin/advertise/${advtCode}`, { method: 'DELETE' }).catch(() => {})
+            toast.error('Banner upload failed, campaign was not created. Please try again.')
+            return
           }
         }
 

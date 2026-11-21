@@ -134,12 +134,10 @@ export default async function HomePage({ searchParams }: Props) {
       />
       <main className="pb-24">
 
-      {/* Mobile-first: Show ad campaigns before everything else on mobile */}
+      {/* Top banner strip: only used when there are more ads than the sidebars hold (4 left + 4 right) */}
       {isFirstPage && (
-        <section className="lg:hidden container mx-auto px-2 pt-4 space-y-3">
-          <AdPlacement ads={ads} page="homepage" position="top" />
-          <AdPlacement ads={ads} page="home" position="left" />
-          <AdPlacement ads={ads} page="homepage" position="right" />
+        <section className="container mx-auto max-w-8xl px-2 sm:px-4 lg:px-8 pt-4 empty:hidden">
+          <AdPlacement ads={ads} page="homepage" position="top" balanceSide="overflow" />
         </section>
       )}
 
@@ -151,6 +149,9 @@ export default async function HomePage({ searchParams }: Props) {
               
               {/* Left: Top News */}
               <div className="space-y-6">
+                {/* Sidebar ads: 1st, 3rd, 5th ... campaign */}
+                <AdPlacement ads={ads} page="homepage" position="left" balanceSide="left" />
+
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-4">
                     <span className="h-6 w-1 rounded-full bg-brand" />
@@ -253,8 +254,8 @@ export default async function HomePage({ searchParams }: Props) {
 
               {/* Right: Punjab Regional */}
               <div className="space-y-6">
-                {/* Sidebar Ad - Showing top-positioned ad content */}
-                <AdPlacement ads={ads} page="homepage" position="top" />
+                {/* Sidebar ads: 2nd, 4th, 6th ... campaign */}
+                <AdPlacement ads={ads} page="homepage" position="right" balanceSide="right" />
 
                 <div className="flex items-center gap-4 mb-4">
                   <span className="h-6 w-1 rounded-full bg-brand-blue" />
@@ -363,9 +364,6 @@ export default async function HomePage({ searchParams }: Props) {
               />
             )}
 
-            {/* Sidebar Advertisement */}
-            <AdPlacement ads={ads} page="homepage" position="right" className="mb-10" />
-
             {/* Global News */}
             {globalArticles.length > 0 && (
               <div className="premium-card p-8">
@@ -410,10 +408,7 @@ export default async function HomePage({ searchParams }: Props) {
         </div>
       </section>
 
-      {/* Bottom Advertisement */}
-      <div className="mx-auto max-w-8xl px-4 lg:px-8 py-12">
-        <AdPlacement ads={ads} page="homepage" position="bottom" />
-      </div>
+
 
       {/* 3. Multimedia Gallery Section - Recreating the classic look from the screenshot */}
       <section className="mx-auto max-w-8xl px-4 lg:px-8">

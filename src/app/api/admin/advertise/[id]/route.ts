@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { query } from '@/lib/db'
+import { revalidateAdPages } from '@/lib/revalidate-ads'
 import { S3Client, DeleteObjectCommand } from '@aws-sdk/client-s3'
 
 export async function GET(
@@ -17,7 +18,15 @@ export async function GET(
       return NextResponse.json({ error: 'Advertisement not found' }, { status: 404 })
     }
 
-    return NextResponse.json(result[0])
+    const row: any = result[0]
+    const ymd = (d: unknown) => {
+      if (!d) return null
+      const dt = d instanceof Date ? d : new Date(d as string)
+      if (isNaN(dt.getTime())) return null
+      const pad = (n: number) => String(n).padStart(2, '0')
+      return `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}`
+    }
+    return NextResponse.json({ ...row, start_date: ymd(row.start_date), end_date: ymd(row.end_date) })
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
@@ -35,19 +44,13 @@ export async function PUT(
     await query(
       `UPDATE ox_advt 
        SET advt_head = $1, advt_body = $2, permalink = $3, active = $4,
-           geo_enabled = $5, geo_regions = $6, start_date = $7, end_date = $8,
+           geo_enabled = $5, geo_regions = COALESCE($6, geo_regions), start_date = $7, end_date = $8,
            updated_at = CURRENT_TIMESTAMP 
        WHERE advt_code = $9`,
-      [advt_head, advt_body, permalink, active, geo_enabled ?? false, geo_regions ?? 'punjab', start_date || null, end_date || null, id]
+      [advt_head, advt_body, permalink, active, geo_enabled ?? false, geo_regions ?? null, start_date || null, end_date || null, id]
     )
 
-    const { revalidatePath } = await import('next/cache')
-    revalidatePath('/')
-    revalidatePath('/news/[slug]', 'page')
-    revalidatePath('/category/[slug]', 'page')
-    revalidatePath('/advertisement')
-    revalidatePath('/admin/advertise')
-    revalidatePath(`/advertisement/${permalink}`)
+    revalidateAdPages(permalink)
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
@@ -80,12 +83,7 @@ export async function DELETE(
       }
     }
     
-    const { revalidatePath } = await import('next/cache')
-    revalidatePath('/')
-    revalidatePath('/news/[slug]', 'page')
-    revalidatePath('/category/[slug]', 'page')
-    revalidatePath('/advertisement')
-    revalidatePath('/admin/advertise')
+    revalidateAdPages()
     
     return NextResponse.json({ success: true })
   } catch (error: any) {
@@ -101,12 +99,7 @@ export async function PATCH(
     const { id } = await params
     await query(`UPDATE ox_advt SET updated_at = CURRENT_TIMESTAMP WHERE advt_code = $1`, [id])
     
-    const { revalidatePath } = await import('next/cache')
-    revalidatePath('/')
-    revalidatePath('/news/[slug]', 'page')
-    revalidatePath('/category/[slug]', 'page')
-    revalidatePath('/advertisement')
-    revalidatePath('/admin/advertise')
+    revalidateAdPages()
     
     return NextResponse.json({ success: true })
   } catch (error: any) {

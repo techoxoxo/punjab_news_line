@@ -11,6 +11,15 @@ interface AdPlacementProps {
   page: string
   position: string
   className?: string
+  /**
+   * Homepage balancing. All ads targeted at the page (any position) form one pool, newest first:
+   *  - the first `maxPerSide * 2` ads alternate between the left and right columns
+   *    (1st -> left, 2nd -> right, 3rd -> left ...), at most `maxPerSide` per column;
+   *  - any further ads overflow into the top banner strip.
+   * Render one AdPlacement per area ('left', 'right', 'overflow') with the same `page`.
+   */
+  balanceSide?: 'left' | 'right' | 'overflow'
+  maxPerSide?: number
 }
 
 import { getClientIp } from '@/lib/geo-client'
@@ -80,7 +89,7 @@ async function getGeoCheck(ip: string | null, coords: Coords | null) {
   return geoCheckPromise
 }
 
-export function AdPlacement({ ads, page, position, className = '' }: AdPlacementProps) {
+export function AdPlacement({ ads, page, position, className = '', balanceSide, maxPerSide = 4 }: AdPlacementProps) {
   const [isInGeoFence, setIsInGeoFence] = useState<boolean | null>(null)
 
   // 1. Initial check if any active ad in this placement actually needs geo-fencing check
@@ -140,29 +149,50 @@ export function AdPlacement({ ads, page, position, className = '' }: AdPlacement
     if (targetPage === 'homepage') targetPage = 'home'
     
     const matchesPage = adPage === 'everywhere' || adPage === targetPage
-    const matchesPos = adPos === 'everywhere' || adPos === position.toLowerCase()
+    const matchesPos = balanceSide ? true : adPos === 'everywhere' || adPos === position.toLowerCase()
     return matchesPage && matchesPos
   })
 
-  if (filteredAds.length === 0) return null
+  // Split the shared pool: first maxPerSide*2 ads alternate left/right, the rest overflow to the top strip.
+  // Sorted by code so every placement derives the same order independently.
+  const sidebarCapacity = maxPerSide * 2
+  const visibleAds = balanceSide
+    ? [...filteredAds]
+        .sort((a, b) => b.advt_code - a.advt_code)
+        .filter((_, i) =>
+          balanceSide === 'overflow'
+            ? i >= sidebarCapacity
+            : i < sidebarCapacity && (i % 2 === 0) === (balanceSide === 'left')
+        )
+    : filteredAds
+
+  if (visibleAds.length === 0) return null
+
+  // Banners: 1 ad = full width, 2+ ads = equal-width 2-column grid (an odd last ad spans the full row).
+  // Sidebar columns: stacked, one ad per row.
+  const isBannerSlot = balanceSide === 'overflow' || (!balanceSide && (position === 'top' || position === 'bottom'))
+  const wrapperClass = isBannerSlot
+    ? `grid grid-cols-1 gap-4 ${visibleAds.length > 1 ? 'md:grid-cols-2' : ''} ${className}`
+    : `space-y-4 ${className}`
 
   return (
-    <div className={`space-y-4 ${className}`}>
-      {filteredAds.map(ad => {
+    <div className={wrapperClass}>
+      {visibleAds.map((ad, adIndex) => {
+        const spansFullRow = isBannerSlot && visibleAds.length > 1 && visibleAds.length % 2 === 1 && adIndex === visibleAds.length - 1
         const hasLink = ad.permalink && ad.permalink.trim() !== ''
         const href = hasLink 
           ? (ad.permalink.startsWith('http') ? ad.permalink : `https://${ad.permalink}`)
           : null
 
         const parts = ad.advt_body?.split('|').map(s => s.trim()) || []
-        const isTopOrBottom = position === 'top' || position === 'bottom'
+        const isTopOrBottom = isBannerSlot
         
         // If there's content after the second pipe, it might be HTML or custom content
         const hasHtml = parts.length > 2 && (parts[2].includes('<') || parts[2].includes('http'))
         const htmlContent = parts.slice(2).join('|')
         
         const content = (
-          <div className={`relative ${isTopOrBottom ? 'min-h-[100px]' : 'aspect-square min-h-[250px]'} bg-white flex items-center justify-center overflow-hidden rounded-lg`}>
+          <div className={`relative ${isTopOrBottom ? 'aspect-[97/25] min-h-[80px]' : 'aspect-square min-h-[250px]'} bg-white flex items-center justify-center overflow-hidden rounded-lg`}>
              {hasHtml ? (
                 <div className="w-full h-full p-2 overflow-hidden flex items-center justify-center" dangerouslySetInnerHTML={{ __html: htmlContent }} />
              ) : (
@@ -172,7 +202,7 @@ export function AdPlacement({ ads, page, position, className = '' }: AdPlacement
                   width={isTopOrBottom ? 970 : 400}
                   height={isTopOrBottom ? 250 : 400}
                   unoptimized
-                  className="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-700"
+                  className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform duration-700"
                 />
              )}
           </div>
@@ -186,7 +216,7 @@ export function AdPlacement({ ads, page, position, className = '' }: AdPlacement
                 href={href!}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block group overflow-hidden rounded-lg border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand/20 transition-all duration-500"
+                className={`block group overflow-hidden rounded-lg border border-slate-100 shadow-sm hover:shadow-xl hover:border-brand/20 transition-all duration-500 ${spansFullRow ? 'md:col-span-2' : ''}`}
               >
                 {content}
               </a>
@@ -198,7 +228,7 @@ export function AdPlacement({ ads, page, position, className = '' }: AdPlacement
           <React.Fragment key={ad.advt_code}>
             <AdImpressionTracker advtCode={ad.advt_code} />
             <div 
-              className="block group overflow-hidden rounded-lg border border-slate-100 shadow-sm transition-all duration-500"
+              className={`block group overflow-hidden rounded-lg border border-slate-100 shadow-sm transition-all duration-500 ${spansFullRow ? 'md:col-span-2' : ''}`}
             >
               {content}
             </div>

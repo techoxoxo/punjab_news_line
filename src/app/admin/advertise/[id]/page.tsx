@@ -51,7 +51,7 @@ export default function EditAdvertisePage({ params }: { params: Promise<{ id: st
             advt_head: data.advt_head || '',
             advt_body: data.advt_body || '',
             permalink: data.permalink || '',
-            active: data.active || 2,
+            active: data.active ?? 2,
             placement: 'sidebar_top',
             geo_enabled: !!data.geo_enabled,
             start_date: data.start_date ? data.start_date.slice(0, 10) : '',

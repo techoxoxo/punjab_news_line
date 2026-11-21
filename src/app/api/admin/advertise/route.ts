@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { query } from '@/lib/db'
+import { revalidateAdPages } from '@/lib/revalidate-ads'
 
 export async function POST(req: Request) {
   try {
@@ -24,12 +25,7 @@ export async function POST(req: Request) {
       }
     }
 
-    const { revalidatePath } = await import('next/cache')
-    revalidatePath('/')
-    revalidatePath('/news/[slug]', 'page')
-    revalidatePath('/category/[slug]', 'page')
-    revalidatePath('/advertisement')
-    revalidatePath('/admin/advertise')
+    revalidateAdPages()
 
     return NextResponse.json({ 
       success: true, 
